@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akzidenz-Grotesk-Next-Medium-Extd.otf">
+            <string>AkGroteskNextWeb-MedExt</string>
+        </array>
+        <array key="Akzidenz-Grotesk-Next-Regular-Extd.otf">
+            <string>AkGroteskNextWeb-RegularExt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PXFitPrefCell" rowHeight="175" id="KGk-i7-Jjw" customClass="PXFitPrefCell" customModule="Pixibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="174.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT IS YOUR FIT PREFERENCE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psn-kG-tWA">
+                        <rect key="frame" x="16" y="20" width="288" height="12"/>
+                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZYd-Fa-gJ9">
+                        <rect key="frame" x="16" y="62" width="288" height="51"/>
+                        <subviews>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igq-Gl-nCN" customClass="PXTagView" customModule="Pixibo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="51"/>
+                                <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="11"/>
+                                <state key="normal" title="TIGHT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fitPreferenceClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GTE-V9-ek7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="200" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgW-fY-0ff" customClass="PXTagView" customModule="Pixibo" customModuleProvider="target">
+                                <rect key="frame" x="101.5" y="0.0" width="85" height="51"/>
+                                <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="11"/>
+                                <state key="normal" title="REGULAR">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fitPreferenceClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yMi-ec-Ee4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhP-Jd-Vh2" customClass="PXTagView" customModule="Pixibo" customModuleProvider="target">
+                                <rect key="frame" x="202.5" y="0.0" width="85.5" height="51"/>
+                                <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="11"/>
+                                <state key="normal" title="LOOSE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fitPreferenceClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jhu-os-hG2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="ocY-Yl-jvT"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fits exactly as intended." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuB-El-bmx">
+                        <rect key="frame" x="32" y="123" width="256" height="12"/>
+                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZYd-Fa-gJ9" firstAttribute="top" secondItem="Psn-kG-tWA" secondAttribute="bottom" constant="30" id="Azp-VC-8ez"/>
+                    <constraint firstItem="BuB-El-bmx" firstAttribute="top" secondItem="ZYd-Fa-gJ9" secondAttribute="bottom" constant="10" id="MKa-H2-Vvz"/>
+                    <constraint firstItem="BuB-El-bmx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="Nfg-gN-WeW"/>
+                    <constraint firstAttribute="trailing" secondItem="ZYd-Fa-gJ9" secondAttribute="trailing" constant="16" id="Uyq-oN-DFh"/>
+                    <constraint firstItem="ZYd-Fa-gJ9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="chX-Sk-tGs"/>
+                    <constraint firstAttribute="trailing" secondItem="BuB-El-bmx" secondAttribute="trailing" constant="32" id="f5F-2u-kjf"/>
+                    <constraint firstItem="Psn-kG-tWA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="heJ-no-75z"/>
+                    <constraint firstAttribute="trailing" secondItem="Psn-kG-tWA" secondAttribute="trailing" constant="16" id="n1X-aA-P0o"/>
+                    <constraint firstItem="Psn-kG-tWA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="yN3-qh-3NA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="BuB-El-bmx" id="adG-8R-4C0"/>
+                <outlet property="titleLabel" destination="Psn-kG-tWA" id="477-03-xTQ"/>
+                <outletCollection property="fitPrefButton" destination="igq-Gl-nCN" collectionClass="NSMutableArray" id="33r-2d-U42"/>
+                <outletCollection property="fitPrefButton" destination="wgW-fY-0ff" collectionClass="NSMutableArray" id="4H8-5D-cKT"/>
+                <outletCollection property="fitPrefButton" destination="RhP-Jd-Vh2" collectionClass="NSMutableArray" id="sTJ-wd-qv3"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="210.94452773613196"/>
+        </tableViewCell>
+    </objects>
+</document>

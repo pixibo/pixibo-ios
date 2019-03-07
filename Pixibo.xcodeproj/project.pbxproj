@@ -1,0 +1,1202 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B52987459C38DAE47DE8379 /* Pods_Pixibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141EF181FC18DC979E2C0BC4 /* Pods_Pixibo.framework */; };
+		8819FAD17A0F7BDA5531C13C /* Pods_PixiboTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DC673055BD5BB80584FE5 /* Pods_PixiboTests.framework */; };
+		97BD14FB80A28D1A9786089C /* Pods_PixiboUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B23EE3BECBB4DA773BD7E0 /* Pods_PixiboUITests.framework */; };
+		EF185F9621FDD8110072FAB0 /* PXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185F9521FDD8110072FAB0 /* PXButton.swift */; };
+		EF185F9821FDD89E0072FAB0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185F9721FDD89E0072FAB0 /* UIColor+Extension.swift */; };
+		EF185F9B21FDDBDD0072FAB0 /* PXProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185F9A21FDDBDD0072FAB0 /* PXProgressView.swift */; };
+		EF185F9E21FDDD380072FAB0 /* PXBodyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185F9C21FDDD380072FAB0 /* PXBodyProfileCell.swift */; };
+		EF185F9F21FDDD380072FAB0 /* PXBodyProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF185F9D21FDDD380072FAB0 /* PXBodyProfileCell.xib */; };
+		EF185FA121FDE17E0072FAB0 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185FA021FDE17E0072FAB0 /* NSObject+Extension.swift */; };
+		EF185FA521FDE4AA0072FAB0 /* PXHeaderTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185FA421FDE4AA0072FAB0 /* PXHeaderTitleCell.swift */; };
+		EF185FA721FDE4F40072FAB0 /* PXHeaderTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF185FA621FDE4F40072FAB0 /* PXHeaderTitleCell.xib */; };
+		EF185FAA21FE12E60072FAB0 /* PXBraSizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185FA821FE12E50072FAB0 /* PXBraSizeCell.swift */; };
+		EF185FAB21FE12E60072FAB0 /* PXBraSizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF185FA921FE12E60072FAB0 /* PXBraSizeCell.xib */; };
+		EF185FAE21FE24770072FAB0 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185FAD21FE24770072FAB0 /* UITextField+Extension.swift */; };
+		EF185FB121FE29C90072FAB0 /* PXTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185FB021FE29C90072FAB0 /* PXTextField.swift */; };
+		EF185FB421FE35390072FAB0 /* PXPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185FB321FE35390072FAB0 /* PXPickerView.swift */; };
+		EF185FB621FE3B8B0072FAB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185FB521FE3B8B0072FAB0 /* ViewController.swift */; };
+		EF29D0792205583D00B31A4C /* localData.Json in Resources */ = {isa = PBXBuildFile; fileRef = EF29D0782205583D00B31A4C /* localData.Json */; };
+		EF29D07B22055F0600B31A4C /* PRBodyProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D07A22055F0600B31A4C /* PRBodyProfileModel.swift */; };
+		EF29D07E22063D8C00B31A4C /* PXFitConfidenceNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D07C22063D8C00B31A4C /* PXFitConfidenceNewCell.swift */; };
+		EF29D07F22063D8C00B31A4C /* PXFitConfidenceNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF29D07D22063D8C00B31A4C /* PXFitConfidenceNewCell.xib */; };
+		EF29D081220644D000B31A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF29D080220644D000B31A4C /* Assets.xcassets */; };
+		EF29D083220645D600B31A4C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D082220645D600B31A4C /* UIImage+Extension.swift */; };
+		EF29D08622065F0300B31A4C /* PXResultSizeFailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D08422065F0300B31A4C /* PXResultSizeFailCell.swift */; };
+		EF29D08722065F0300B31A4C /* PXResultSizeFailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF29D08522065F0300B31A4C /* PXResultSizeFailCell.xib */; };
+		EF29D089220669BF00B31A4C /* DataType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D088220669BF00B31A4C /* DataType+Extension.swift */; };
+		EF3553E72201491100BB9833 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3553E62201491100BB9833 /* Popover.swift */; };
+		EF3553EA220149CE00BB9833 /* PXPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3553E9220149CE00BB9833 /* PXPrivacyView.swift */; };
+		EF3553EC220149E200BB9833 /* PXPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3553EB220149E200BB9833 /* PXPrivacyView.xib */; };
+		EF3553EE22020FB200BB9833 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3553ED22020FB200BB9833 /* UIFont+Extension.swift */; };
+		EF3553F02202149600BB9833 /* UINavigationbar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3553EF2202149600BB9833 /* UINavigationbar+Extension.swift */; };
+		EF38E31B2230417700B0439F /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = EF38E31A2230417700B0439F /* Boat_Loader.json */; };
+		EF38E31E2230885200B0439F /* PXCustomSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38E31D2230885200B0439F /* PXCustomSegment.swift */; };
+		EF48E0A6221C1363001AF3EF /* PXResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48E0A5221C1363001AF3EF /* PXResultModel.swift */; };
+		EF48E0A8221C1F27001AF3EF /* PXDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48E0A7221C1F27001AF3EF /* PXDataManager.swift */; };
+		EF51C54421F8BE5600ADDA2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C54321F8BE5600ADDA2F /* AppDelegate.swift */; };
+		EF51C54921F8BE5600ADDA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51C54721F8BE5600ADDA2F /* Main.storyboard */; };
+		EF51C54E21F8BE5700ADDA2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51C54C21F8BE5700ADDA2F /* LaunchScreen.storyboard */; };
+		EF51C55921F8BE5700ADDA2F /* PixiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C55821F8BE5700ADDA2F /* PixiboTests.swift */; };
+		EF51C56421F8BE5700ADDA2F /* PixiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C56321F8BE5700ADDA2F /* PixiboUITests.swift */; };
+		EF51C57721F9708400ADDA2F /* PXBodyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C57621F9708400ADDA2F /* PXBodyProfileViewController.swift */; };
+		EF51C57B21F9777500ADDA2F /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C57A21F9777500ADDA2F /* ViewController+Extension.swift */; };
+		EF51C57F21FC75DD00ADDA2F /* PXFitPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C57E21FC75DD00ADDA2F /* PXFitPreferenceViewController.swift */; };
+		EF51C58121FC762000ADDA2F /* PXResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C58021FC762000ADDA2F /* PXResultViewController.swift */; };
+		EF51C58621FC844800ADDA2F /* PXConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C58521FC844800ADDA2F /* PXConstant.swift */; };
+		EF51C58821FC845600ADDA2F /* PXUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C58721FC845600ADDA2F /* PXUtility.swift */; };
+		EF51C58B21FC851900ADDA2F /* PXWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C58A21FC851900ADDA2F /* PXWebServiceManager.swift */; };
+		EF62557A2230273500BE7FAC /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6255792230273500BE7FAC /* CustomAlertView.swift */; };
+		EF62565022302F9A00BE7FAC /* Pomelo_Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = EF62564F22302F9900BE7FAC /* Pomelo_Loading.json */; };
+		EF6CF17A222EFE23002EBF2E /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6CF179222EFE23002EBF2E /* UILabel+Extension.swift */; };
+		EF85ABEC21FF7C680059C0B8 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85ABEB21FF7C680059C0B8 /* TagView.swift */; };
+		EF85ABF121FF7DA10059C0B8 /* PXFitPrefCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85ABEF21FF7DA10059C0B8 /* PXFitPrefCell.swift */; };
+		EF85ABF221FF7DA10059C0B8 /* PXFitPrefCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF85ABF021FF7DA10059C0B8 /* PXFitPrefCell.xib */; };
+		EF85ABF421FF81D20059C0B8 /* PXTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85ABF321FF81D20059C0B8 /* PXTagView.swift */; };
+		EF85AC1E21FF8BB80059C0B8 /* PXFitConfidenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85AC1C21FF8BB80059C0B8 /* PXFitConfidenceCell.swift */; };
+		EF85AC1F21FF8BB80059C0B8 /* PXFitConfidenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF85AC1D21FF8BB80059C0B8 /* PXFitConfidenceCell.xib */; };
+		EF85AC2221FF8FB30059C0B8 /* SwiftyStarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85AC2121FF8FB30059C0B8 /* SwiftyStarRatingView.swift */; };
+		EF85AC2621FF97CA0059C0B8 /* PXResultSizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85AC2421FF97CA0059C0B8 /* PXResultSizeCell.swift */; };
+		EF85AC2721FF97CA0059C0B8 /* PXResultSizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF85AC2521FF97CA0059C0B8 /* PXResultSizeCell.xib */; };
+		EF85AC2A21FF99540059C0B8 /* PXSizeTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85AC2821FF99540059C0B8 /* PXSizeTypeCell.swift */; };
+		EF85AC2B21FF99540059C0B8 /* PXSizeTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF85AC2921FF99540059C0B8 /* PXSizeTypeCell.xib */; };
+		EFC2F4F6222A88B60084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4CB222A88160084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond-Italic.otf */; };
+		EFC2F4F7222A88B90084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4C6222A88160084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond.otf */; };
+		EFC2F4F8222A88BC0084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4D7222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd-Italic.otf */; };
+		EFC2F4F9222A88BE0084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4DA222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd.otf */; };
+		EFC2F4FA222A88C20084BDDF /* Akzidenz-Grotesk-Next-Medium-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4D8222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Italic.otf */; };
+		EFC2F4FB222A88C40084BDDF /* Akzidenz-Grotesk-Next-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4E3222A88190084BDDF /* Akzidenz-Grotesk-Next-Medium.otf */; };
+		EFC2F4FC222A88C70084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4BF222A88150084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond-Italic.otf */; };
+		EFC2F4FD222A88CA0084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4D3222A88170084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond.otf */; };
+		EFC2F4FE222A88CD0084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4C1222A88150084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd-Italic.otf */; };
+		EFC2F4FF222A88D00084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4C8222A88160084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd.otf */; };
+		EFC2F500222A88D50084BDDF /* Akzidenz-Grotesk-Next-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4BA222A88140084BDDF /* Akzidenz-Grotesk-Next-Regular-Italic.otf */; };
+		EFC2F501222A88DA0084BDDF /* Akzidenz-Grotesk-Next-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F4D1222A88170084BDDF /* Akzidenz-Grotesk-Next-Regular.otf */; };
+		EFC2F510222A98310084BDDF /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F50F222A97270084BDDF /* Roboto-Bold.ttf */; };
+		EFC2F511222A98340084BDDF /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFC2F50E222A971F0084BDDF /* Roboto-Regular.ttf */; };
+		EFC3973B222BEFC000F7FEC7 /* PXCustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3973A222BEFC000F7FEC7 /* PXCustomPickerViewController.swift */; };
+		EFCB73D7220EEB760070AE51 /* PXAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB73D6220EEB760070AE51 /* PXAPIConstant.swift */; };
+		EFCB73D9220EEBA20070AE51 /* PXJSONKeysConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB73D8220EEBA20070AE51 /* PXJSONKeysConstant.swift */; };
+		EFCB73DC220EF15D0070AE51 /* PXLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB73DB220EF15D0070AE51 /* PXLoaderView.swift */; };
+		EFCB73DE220EF1F20070AE51 /* PXLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB73DD220EF1F20070AE51 /* PXLoaderManager.swift */; };
+		EFCB73E12210597F0070AE51 /* PXHowItFitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB73DF2210597F0070AE51 /* PXHowItFitsCell.swift */; };
+		EFCB73E22210597F0070AE51 /* PXHowItFitsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCB73E02210597F0070AE51 /* PXHowItFitsCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF51C55521F8BE5700ADDA2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF51C53821F8BE5500ADDA2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF51C53F21F8BE5500ADDA2F;
+			remoteInfo = Pixibo;
+		};
+		EF51C56021F8BE5700ADDA2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF51C53821F8BE5500ADDA2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF51C53F21F8BE5500ADDA2F;
+			remoteInfo = Pixibo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		141EF181FC18DC979E2C0BC4 /* Pods_Pixibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1664BB2E841AEAB7B57868BB /* Pods-PixiboTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixiboTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixiboTests/Pods-PixiboTests.debug.xcconfig"; sourceTree = "<group>"; };
+		408FB156AA022C04EDA76131 /* Pods-PixiboUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixiboUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixiboUITests/Pods-PixiboUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		448DC673055BD5BB80584FE5 /* Pods_PixiboTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixiboTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E63EFC2F376A8EAC38B5CC /* Pods-Pixibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pixibo/Pods-Pixibo.release.xcconfig"; sourceTree = "<group>"; };
+		E47F9CF22C4630C9A3B00430 /* Pods-PixiboTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixiboTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixiboTests/Pods-PixiboTests.release.xcconfig"; sourceTree = "<group>"; };
+		E692A156C2278E9BA0748B3A /* Pods-Pixibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pixibo/Pods-Pixibo.debug.xcconfig"; sourceTree = "<group>"; };
+		EF185F9521FDD8110072FAB0 /* PXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXButton.swift; sourceTree = "<group>"; };
+		EF185F9721FDD89E0072FAB0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		EF185F9A21FDDBDD0072FAB0 /* PXProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXProgressView.swift; sourceTree = "<group>"; };
+		EF185F9C21FDDD380072FAB0 /* PXBodyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXBodyProfileCell.swift; sourceTree = "<group>"; };
+		EF185F9D21FDDD380072FAB0 /* PXBodyProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXBodyProfileCell.xib; sourceTree = "<group>"; };
+		EF185FA021FDE17E0072FAB0 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		EF185FA421FDE4AA0072FAB0 /* PXHeaderTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXHeaderTitleCell.swift; sourceTree = "<group>"; };
+		EF185FA621FDE4F40072FAB0 /* PXHeaderTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PXHeaderTitleCell.xib; sourceTree = "<group>"; };
+		EF185FA821FE12E50072FAB0 /* PXBraSizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXBraSizeCell.swift; sourceTree = "<group>"; };
+		EF185FA921FE12E60072FAB0 /* PXBraSizeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXBraSizeCell.xib; sourceTree = "<group>"; };
+		EF185FAD21FE24770072FAB0 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		EF185FB021FE29C90072FAB0 /* PXTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXTextField.swift; sourceTree = "<group>"; };
+		EF185FB321FE35390072FAB0 /* PXPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXPickerView.swift; sourceTree = "<group>"; };
+		EF185FB521FE3B8B0072FAB0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF29D0782205583D00B31A4C /* localData.Json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localData.Json; sourceTree = "<group>"; };
+		EF29D07A22055F0600B31A4C /* PRBodyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRBodyProfileModel.swift; sourceTree = "<group>"; };
+		EF29D07C22063D8C00B31A4C /* PXFitConfidenceNewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXFitConfidenceNewCell.swift; sourceTree = "<group>"; };
+		EF29D07D22063D8C00B31A4C /* PXFitConfidenceNewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXFitConfidenceNewCell.xib; sourceTree = "<group>"; };
+		EF29D080220644D000B31A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF29D082220645D600B31A4C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		EF29D08422065F0300B31A4C /* PXResultSizeFailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXResultSizeFailCell.swift; sourceTree = "<group>"; };
+		EF29D08522065F0300B31A4C /* PXResultSizeFailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXResultSizeFailCell.xib; sourceTree = "<group>"; };
+		EF29D088220669BF00B31A4C /* DataType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataType+Extension.swift"; sourceTree = "<group>"; };
+		EF3553E62201491100BB9833 /* Popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		EF3553E9220149CE00BB9833 /* PXPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXPrivacyView.swift; sourceTree = "<group>"; };
+		EF3553EB220149E200BB9833 /* PXPrivacyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXPrivacyView.xib; sourceTree = "<group>"; };
+		EF3553ED22020FB200BB9833 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		EF3553EF2202149600BB9833 /* UINavigationbar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationbar+Extension.swift"; sourceTree = "<group>"; };
+		EF38E31A2230417700B0439F /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
+		EF38E31D2230885200B0439F /* PXCustomSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXCustomSegment.swift; sourceTree = "<group>"; };
+		EF48E0A5221C1363001AF3EF /* PXResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXResultModel.swift; sourceTree = "<group>"; };
+		EF48E0A7221C1F27001AF3EF /* PXDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXDataManager.swift; sourceTree = "<group>"; };
+		EF51C54021F8BE5600ADDA2F /* Pixibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF51C54321F8BE5600ADDA2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF51C54821F8BE5600ADDA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF51C54D21F8BE5700ADDA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF51C54F21F8BE5700ADDA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF51C55421F8BE5700ADDA2F /* PixiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF51C55821F8BE5700ADDA2F /* PixiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixiboTests.swift; sourceTree = "<group>"; };
+		EF51C55A21F8BE5700ADDA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF51C55F21F8BE5700ADDA2F /* PixiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF51C56321F8BE5700ADDA2F /* PixiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixiboUITests.swift; sourceTree = "<group>"; };
+		EF51C56521F8BE5700ADDA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF51C57621F9708400ADDA2F /* PXBodyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXBodyProfileViewController.swift; sourceTree = "<group>"; };
+		EF51C57A21F9777500ADDA2F /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		EF51C57E21FC75DD00ADDA2F /* PXFitPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXFitPreferenceViewController.swift; sourceTree = "<group>"; };
+		EF51C58021FC762000ADDA2F /* PXResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXResultViewController.swift; sourceTree = "<group>"; };
+		EF51C58521FC844800ADDA2F /* PXConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXConstant.swift; sourceTree = "<group>"; };
+		EF51C58721FC845600ADDA2F /* PXUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXUtility.swift; sourceTree = "<group>"; };
+		EF51C58A21FC851900ADDA2F /* PXWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXWebServiceManager.swift; sourceTree = "<group>"; };
+		EF6255792230273500BE7FAC /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		EF62564F22302F9900BE7FAC /* Pomelo_Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pomelo_Loading.json; sourceTree = "<group>"; };
+		EF6CF179222EFE23002EBF2E /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		EF85ABEB21FF7C680059C0B8 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		EF85ABEF21FF7DA10059C0B8 /* PXFitPrefCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXFitPrefCell.swift; sourceTree = "<group>"; };
+		EF85ABF021FF7DA10059C0B8 /* PXFitPrefCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXFitPrefCell.xib; sourceTree = "<group>"; };
+		EF85ABF321FF81D20059C0B8 /* PXTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXTagView.swift; sourceTree = "<group>"; };
+		EF85AC1C21FF8BB80059C0B8 /* PXFitConfidenceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXFitConfidenceCell.swift; sourceTree = "<group>"; };
+		EF85AC1D21FF8BB80059C0B8 /* PXFitConfidenceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXFitConfidenceCell.xib; sourceTree = "<group>"; };
+		EF85AC2121FF8FB30059C0B8 /* SwiftyStarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyStarRatingView.swift; sourceTree = "<group>"; };
+		EF85AC2421FF97CA0059C0B8 /* PXResultSizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXResultSizeCell.swift; sourceTree = "<group>"; };
+		EF85AC2521FF97CA0059C0B8 /* PXResultSizeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXResultSizeCell.xib; sourceTree = "<group>"; };
+		EF85AC2821FF99540059C0B8 /* PXSizeTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXSizeTypeCell.swift; sourceTree = "<group>"; };
+		EF85AC2921FF99540059C0B8 /* PXSizeTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXSizeTypeCell.xib; sourceTree = "<group>"; };
+		EFC2F4BA222A88140084BDDF /* Akzidenz-Grotesk-Next-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Regular-Italic.otf"; sourceTree = "<group>"; };
+		EFC2F4BF222A88150084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Regular-Cond-Italic.otf"; sourceTree = "<group>"; };
+		EFC2F4C1222A88150084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Regular-Extd-Italic.otf"; sourceTree = "<group>"; };
+		EFC2F4C6222A88160084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Medium-Cond.otf"; sourceTree = "<group>"; };
+		EFC2F4C8222A88160084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Regular-Extd.otf"; sourceTree = "<group>"; };
+		EFC2F4CB222A88160084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Medium-Cond-Italic.otf"; sourceTree = "<group>"; };
+		EFC2F4D1222A88170084BDDF /* Akzidenz-Grotesk-Next-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Regular.otf"; sourceTree = "<group>"; };
+		EFC2F4D3222A88170084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Regular-Cond.otf"; sourceTree = "<group>"; };
+		EFC2F4D7222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Medium-Extd-Italic.otf"; sourceTree = "<group>"; };
+		EFC2F4D8222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Medium-Italic.otf"; sourceTree = "<group>"; };
+		EFC2F4DA222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Medium-Extd.otf"; sourceTree = "<group>"; };
+		EFC2F4E3222A88190084BDDF /* Akzidenz-Grotesk-Next-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk-Next-Medium.otf"; sourceTree = "<group>"; };
+		EFC2F50E222A971F0084BDDF /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		EFC2F50F222A97270084BDDF /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		EFC3973A222BEFC000F7FEC7 /* PXCustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXCustomPickerViewController.swift; sourceTree = "<group>"; };
+		EFCB73D6220EEB760070AE51 /* PXAPIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAPIConstant.swift; sourceTree = "<group>"; };
+		EFCB73D8220EEBA20070AE51 /* PXJSONKeysConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXJSONKeysConstant.swift; sourceTree = "<group>"; };
+		EFCB73DB220EF15D0070AE51 /* PXLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXLoaderView.swift; sourceTree = "<group>"; };
+		EFCB73DD220EF1F20070AE51 /* PXLoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXLoaderManager.swift; sourceTree = "<group>"; };
+		EFCB73DF2210597F0070AE51 /* PXHowItFitsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXHowItFitsCell.swift; sourceTree = "<group>"; };
+		EFCB73E02210597F0070AE51 /* PXHowItFitsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXHowItFitsCell.xib; sourceTree = "<group>"; };
+		F2B23EE3BECBB4DA773BD7E0 /* Pods_PixiboUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixiboUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C43EA41D2E762752DA096B /* Pods-PixiboUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixiboUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixiboUITests/Pods-PixiboUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF51C53D21F8BE5500ADDA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B52987459C38DAE47DE8379 /* Pods_Pixibo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51C55121F8BE5700ADDA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8819FAD17A0F7BDA5531C13C /* Pods_PixiboTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51C55C21F8BE5700ADDA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD14FB80A28D1A9786089C /* Pods_PixiboUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29192BDC47C13D7F4FC762B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141EF181FC18DC979E2C0BC4 /* Pods_Pixibo.framework */,
+				448DC673055BD5BB80584FE5 /* Pods_PixiboTests.framework */,
+				F2B23EE3BECBB4DA773BD7E0 /* Pods_PixiboUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF3A4F4A301C8EC8418D0B36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E692A156C2278E9BA0748B3A /* Pods-Pixibo.debug.xcconfig */,
+				47E63EFC2F376A8EAC38B5CC /* Pods-Pixibo.release.xcconfig */,
+				1664BB2E841AEAB7B57868BB /* Pods-PixiboTests.debug.xcconfig */,
+				E47F9CF22C4630C9A3B00430 /* Pods-PixiboTests.release.xcconfig */,
+				408FB156AA022C04EDA76131 /* Pods-PixiboUITests.debug.xcconfig */,
+				F4C43EA41D2E762752DA096B /* Pods-PixiboUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF185F9321FDD7F50072FAB0 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EF38E31C2230883300B0439F /* CustomSegment */,
+				EF6255782230271D00BE7FAC /* CustomAlertView */,
+				EFCB73DA220EEBED0070AE51 /* Loader */,
+				EF3553E5220148FE00BB9833 /* PopOver */,
+				EF85AC2021FF8F860059C0B8 /* StarRatingView */,
+				EF85ABEA21FF7C5D0059C0B8 /* TagView */,
+				EF185FB221FE35210072FAB0 /* PicketView */,
+				EF185FAF21FE29B00072FAB0 /* UITextField */,
+				EF185F9921FDDBB70072FAB0 /* ProgressBar */,
+				EF185F9421FDD7FD0072FAB0 /* Button */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		EF185F9421FDD7FD0072FAB0 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EF185F9521FDD8110072FAB0 /* PXButton.swift */,
+				EF85ABF321FF81D20059C0B8 /* PXTagView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		EF185F9921FDDBB70072FAB0 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				EF185F9A21FDDBDD0072FAB0 /* PXProgressView.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		EF185FAF21FE29B00072FAB0 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				EF185FB021FE29C90072FAB0 /* PXTextField.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		EF185FB221FE35210072FAB0 /* PicketView */ = {
+			isa = PBXGroup;
+			children = (
+				EF185FB321FE35390072FAB0 /* PXPickerView.swift */,
+			);
+			path = PicketView;
+			sourceTree = "<group>";
+		};
+		EF3553E5220148FE00BB9833 /* PopOver */ = {
+			isa = PBXGroup;
+			children = (
+				EF3553E62201491100BB9833 /* Popover.swift */,
+			);
+			path = PopOver;
+			sourceTree = "<group>";
+		};
+		EF3553E8220149A400BB9833 /* PrivacyView */ = {
+			isa = PBXGroup;
+			children = (
+				EF3553E9220149CE00BB9833 /* PXPrivacyView.swift */,
+				EF3553EB220149E200BB9833 /* PXPrivacyView.xib */,
+			);
+			path = PrivacyView;
+			sourceTree = "<group>";
+		};
+		EF38E31C2230883300B0439F /* CustomSegment */ = {
+			isa = PBXGroup;
+			children = (
+				EF38E31D2230885200B0439F /* PXCustomSegment.swift */,
+			);
+			path = CustomSegment;
+			sourceTree = "<group>";
+		};
+		EF48E0A9221C9CCC001AF3EF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EFC2F50F222A97270084BDDF /* Roboto-Bold.ttf */,
+				EFC2F50E222A971F0084BDDF /* Roboto-Regular.ttf */,
+				EFC2F4CB222A88160084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond-Italic.otf */,
+				EFC2F4C6222A88160084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond.otf */,
+				EFC2F4D7222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd-Italic.otf */,
+				EFC2F4DA222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd.otf */,
+				EFC2F4D8222A88180084BDDF /* Akzidenz-Grotesk-Next-Medium-Italic.otf */,
+				EFC2F4E3222A88190084BDDF /* Akzidenz-Grotesk-Next-Medium.otf */,
+				EFC2F4BF222A88150084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond-Italic.otf */,
+				EFC2F4D3222A88170084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond.otf */,
+				EFC2F4C1222A88150084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd-Italic.otf */,
+				EFC2F4C8222A88160084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd.otf */,
+				EFC2F4BA222A88140084BDDF /* Akzidenz-Grotesk-Next-Regular-Italic.otf */,
+				EFC2F4D1222A88170084BDDF /* Akzidenz-Grotesk-Next-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EF51C53721F8BE5500ADDA2F = {
+			isa = PBXGroup;
+			children = (
+				EF51C54221F8BE5600ADDA2F /* Pixibo */,
+				EF51C55721F8BE5700ADDA2F /* PixiboTests */,
+				EF51C56221F8BE5700ADDA2F /* PixiboUITests */,
+				EF51C54121F8BE5600ADDA2F /* Products */,
+				DF3A4F4A301C8EC8418D0B36 /* Pods */,
+				29192BDC47C13D7F4FC762B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF51C54121F8BE5600ADDA2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF51C54021F8BE5600ADDA2F /* Pixibo.app */,
+				EF51C55421F8BE5700ADDA2F /* PixiboTests.xctest */,
+				EF51C55F21F8BE5700ADDA2F /* PixiboUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF51C54221F8BE5600ADDA2F /* Pixibo */ = {
+			isa = PBXGroup;
+			children = (
+				EF185F9321FDD7F50072FAB0 /* Component */,
+				EF51C58921FC850500ADDA2F /* Network */,
+				EF51C58421FC841100ADDA2F /* Utilities */,
+				EF51C57821F9709300ADDA2F /* Extension */,
+				EF51C57921F9709D00ADDA2F /* Controller */,
+				EF51C58221FC816000ADDA2F /* View */,
+				EF51C58321FC817000ADDA2F /* Model */,
+				EF51C54321F8BE5600ADDA2F /* AppDelegate.swift */,
+				EF185FB521FE3B8B0072FAB0 /* ViewController.swift */,
+				EF51C54721F8BE5600ADDA2F /* Main.storyboard */,
+				EF29D0782205583D00B31A4C /* localData.Json */,
+				EF62564F22302F9900BE7FAC /* Pomelo_Loading.json */,
+				EF38E31A2230417700B0439F /* Boat_Loader.json */,
+				EF51C54C21F8BE5700ADDA2F /* LaunchScreen.storyboard */,
+				EF29D080220644D000B31A4C /* Assets.xcassets */,
+				EF48E0A9221C9CCC001AF3EF /* Fonts */,
+				EF51C54F21F8BE5700ADDA2F /* Info.plist */,
+			);
+			path = Pixibo;
+			sourceTree = "<group>";
+		};
+		EF51C55721F8BE5700ADDA2F /* PixiboTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF51C55821F8BE5700ADDA2F /* PixiboTests.swift */,
+				EF51C55A21F8BE5700ADDA2F /* Info.plist */,
+			);
+			path = PixiboTests;
+			sourceTree = "<group>";
+		};
+		EF51C56221F8BE5700ADDA2F /* PixiboUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF51C56321F8BE5700ADDA2F /* PixiboUITests.swift */,
+				EF51C56521F8BE5700ADDA2F /* Info.plist */,
+			);
+			path = PixiboUITests;
+			sourceTree = "<group>";
+		};
+		EF51C57821F9709300ADDA2F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF3553ED22020FB200BB9833 /* UIFont+Extension.swift */,
+				EF6CF179222EFE23002EBF2E /* UILabel+Extension.swift */,
+				EF185F9721FDD89E0072FAB0 /* UIColor+Extension.swift */,
+				EF51C57A21F9777500ADDA2F /* ViewController+Extension.swift */,
+				EF185FA021FDE17E0072FAB0 /* NSObject+Extension.swift */,
+				EF185FAD21FE24770072FAB0 /* UITextField+Extension.swift */,
+				EF3553EF2202149600BB9833 /* UINavigationbar+Extension.swift */,
+				EF29D082220645D600B31A4C /* UIImage+Extension.swift */,
+				EF29D088220669BF00B31A4C /* DataType+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF51C57921F9709D00ADDA2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF51C57621F9708400ADDA2F /* PXBodyProfileViewController.swift */,
+				EF51C57E21FC75DD00ADDA2F /* PXFitPreferenceViewController.swift */,
+				EF51C58021FC762000ADDA2F /* PXResultViewController.swift */,
+				EFC3973A222BEFC000F7FEC7 /* PXCustomPickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF51C58221FC816000ADDA2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF85ABEE21FF7D620059C0B8 /* BodyProfileView */,
+				EF85ABED21FF7D580059C0B8 /* FitPrefView */,
+				EF85AC2321FF97AC0059C0B8 /* ResultView */,
+				EF3553E8220149A400BB9833 /* PrivacyView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF51C58321FC817000ADDA2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF29D07A22055F0600B31A4C /* PRBodyProfileModel.swift */,
+				EF48E0A5221C1363001AF3EF /* PXResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF51C58421FC841100ADDA2F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF51C58521FC844800ADDA2F /* PXConstant.swift */,
+				EFCB73D6220EEB760070AE51 /* PXAPIConstant.swift */,
+				EFCB73D8220EEBA20070AE51 /* PXJSONKeysConstant.swift */,
+				EF51C58721FC845600ADDA2F /* PXUtility.swift */,
+				EFCB73DD220EF1F20070AE51 /* PXLoaderManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EF51C58921FC850500ADDA2F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF51C58A21FC851900ADDA2F /* PXWebServiceManager.swift */,
+				EF48E0A7221C1F27001AF3EF /* PXDataManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF6255782230271D00BE7FAC /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				EF6255792230273500BE7FAC /* CustomAlertView.swift */,
+			);
+			path = CustomAlertView;
+			sourceTree = "<group>";
+		};
+		EF85ABEA21FF7C5D0059C0B8 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				EF85ABEB21FF7C680059C0B8 /* TagView.swift */,
+			);
+			path = TagView;
+			sourceTree = "<group>";
+		};
+		EF85ABED21FF7D580059C0B8 /* FitPrefView */ = {
+			isa = PBXGroup;
+			children = (
+				EF85ABEF21FF7DA10059C0B8 /* PXFitPrefCell.swift */,
+				EF85ABF021FF7DA10059C0B8 /* PXFitPrefCell.xib */,
+				EF85AC1C21FF8BB80059C0B8 /* PXFitConfidenceCell.swift */,
+				EF85AC1D21FF8BB80059C0B8 /* PXFitConfidenceCell.xib */,
+				EF29D07C22063D8C00B31A4C /* PXFitConfidenceNewCell.swift */,
+				EF29D07D22063D8C00B31A4C /* PXFitConfidenceNewCell.xib */,
+			);
+			path = FitPrefView;
+			sourceTree = "<group>";
+		};
+		EF85ABEE21FF7D620059C0B8 /* BodyProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				EF185F9C21FDDD380072FAB0 /* PXBodyProfileCell.swift */,
+				EF185F9D21FDDD380072FAB0 /* PXBodyProfileCell.xib */,
+				EF185FA421FDE4AA0072FAB0 /* PXHeaderTitleCell.swift */,
+				EF185FA621FDE4F40072FAB0 /* PXHeaderTitleCell.xib */,
+				EF185FA821FE12E50072FAB0 /* PXBraSizeCell.swift */,
+				EF185FA921FE12E60072FAB0 /* PXBraSizeCell.xib */,
+			);
+			path = BodyProfileView;
+			sourceTree = "<group>";
+		};
+		EF85AC2021FF8F860059C0B8 /* StarRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				EF85AC2121FF8FB30059C0B8 /* SwiftyStarRatingView.swift */,
+			);
+			path = StarRatingView;
+			sourceTree = "<group>";
+		};
+		EF85AC2321FF97AC0059C0B8 /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				EF29D08422065F0300B31A4C /* PXResultSizeFailCell.swift */,
+				EF29D08522065F0300B31A4C /* PXResultSizeFailCell.xib */,
+				EF85AC2421FF97CA0059C0B8 /* PXResultSizeCell.swift */,
+				EF85AC2521FF97CA0059C0B8 /* PXResultSizeCell.xib */,
+				EF85AC2821FF99540059C0B8 /* PXSizeTypeCell.swift */,
+				EF85AC2921FF99540059C0B8 /* PXSizeTypeCell.xib */,
+				EFCB73DF2210597F0070AE51 /* PXHowItFitsCell.swift */,
+				EFCB73E02210597F0070AE51 /* PXHowItFitsCell.xib */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+		EFCB73DA220EEBED0070AE51 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				EFCB73DB220EF15D0070AE51 /* PXLoaderView.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF51C53F21F8BE5500ADDA2F /* Pixibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF51C56821F8BE5700ADDA2F /* Build configuration list for PBXNativeTarget "Pixibo" */;
+			buildPhases = (
+				2058CB570330588EC56697BB /* [CP] Check Pods Manifest.lock */,
+				EF51C53C21F8BE5500ADDA2F /* Sources */,
+				EF51C53D21F8BE5500ADDA2F /* Frameworks */,
+				EF51C53E21F8BE5500ADDA2F /* Resources */,
+				8F7D26E93C3FB66261D9700B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixibo;
+			productName = Pixibo;
+			productReference = EF51C54021F8BE5600ADDA2F /* Pixibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF51C55321F8BE5700ADDA2F /* PixiboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF51C56B21F8BE5700ADDA2F /* Build configuration list for PBXNativeTarget "PixiboTests" */;
+			buildPhases = (
+				1EC2A661493A68D21A3A243B /* [CP] Check Pods Manifest.lock */,
+				EF51C55021F8BE5700ADDA2F /* Sources */,
+				EF51C55121F8BE5700ADDA2F /* Frameworks */,
+				EF51C55221F8BE5700ADDA2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF51C55621F8BE5700ADDA2F /* PBXTargetDependency */,
+			);
+			name = PixiboTests;
+			productName = PixiboTests;
+			productReference = EF51C55421F8BE5700ADDA2F /* PixiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF51C55E21F8BE5700ADDA2F /* PixiboUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF51C56E21F8BE5700ADDA2F /* Build configuration list for PBXNativeTarget "PixiboUITests" */;
+			buildPhases = (
+				8D5E30803B87ECAB0B9C36D3 /* [CP] Check Pods Manifest.lock */,
+				EF51C55B21F8BE5700ADDA2F /* Sources */,
+				EF51C55C21F8BE5700ADDA2F /* Frameworks */,
+				EF51C55D21F8BE5700ADDA2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF51C56121F8BE5700ADDA2F /* PBXTargetDependency */,
+			);
+			name = PixiboUITests;
+			productName = PixiboUITests;
+			productReference = EF51C55F21F8BE5700ADDA2F /* PixiboUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF51C53821F8BE5500ADDA2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Pixibo;
+				TargetAttributes = {
+					EF51C53F21F8BE5500ADDA2F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EF51C55321F8BE5700ADDA2F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EF51C53F21F8BE5500ADDA2F;
+					};
+					EF51C55E21F8BE5700ADDA2F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EF51C53F21F8BE5500ADDA2F;
+					};
+				};
+			};
+			buildConfigurationList = EF51C53B21F8BE5500ADDA2F /* Build configuration list for PBXProject "Pixibo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF51C53721F8BE5500ADDA2F;
+			productRefGroup = EF51C54121F8BE5600ADDA2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF51C53F21F8BE5500ADDA2F /* Pixibo */,
+				EF51C55321F8BE5700ADDA2F /* PixiboTests */,
+				EF51C55E21F8BE5700ADDA2F /* PixiboUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF51C53E21F8BE5500ADDA2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF85AC2B21FF99540059C0B8 /* PXSizeTypeCell.xib in Resources */,
+				EFC2F4F9222A88BE0084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd.otf in Resources */,
+				EFC2F4FE222A88CD0084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd-Italic.otf in Resources */,
+				EFC2F4FB222A88C40084BDDF /* Akzidenz-Grotesk-Next-Medium.otf in Resources */,
+				EF62565022302F9A00BE7FAC /* Pomelo_Loading.json in Resources */,
+				EF38E31B2230417700B0439F /* Boat_Loader.json in Resources */,
+				EF85AC1F21FF8BB80059C0B8 /* PXFitConfidenceCell.xib in Resources */,
+				EFC2F511222A98340084BDDF /* Roboto-Regular.ttf in Resources */,
+				EFC2F4FF222A88D00084BDDF /* Akzidenz-Grotesk-Next-Regular-Extd.otf in Resources */,
+				EF51C54E21F8BE5700ADDA2F /* LaunchScreen.storyboard in Resources */,
+				EF29D0792205583D00B31A4C /* localData.Json in Resources */,
+				EF85AC2721FF97CA0059C0B8 /* PXResultSizeCell.xib in Resources */,
+				EF185FA721FDE4F40072FAB0 /* PXHeaderTitleCell.xib in Resources */,
+				EF29D081220644D000B31A4C /* Assets.xcassets in Resources */,
+				EFC2F4F6222A88B60084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond-Italic.otf in Resources */,
+				EFC2F4F8222A88BC0084BDDF /* Akzidenz-Grotesk-Next-Medium-Extd-Italic.otf in Resources */,
+				EF185FAB21FE12E60072FAB0 /* PXBraSizeCell.xib in Resources */,
+				EFC2F510222A98310084BDDF /* Roboto-Bold.ttf in Resources */,
+				EF29D07F22063D8C00B31A4C /* PXFitConfidenceNewCell.xib in Resources */,
+				EF29D08722065F0300B31A4C /* PXResultSizeFailCell.xib in Resources */,
+				EFC2F500222A88D50084BDDF /* Akzidenz-Grotesk-Next-Regular-Italic.otf in Resources */,
+				EF3553EC220149E200BB9833 /* PXPrivacyView.xib in Resources */,
+				EF185F9F21FDDD380072FAB0 /* PXBodyProfileCell.xib in Resources */,
+				EF51C54921F8BE5600ADDA2F /* Main.storyboard in Resources */,
+				EF85ABF221FF7DA10059C0B8 /* PXFitPrefCell.xib in Resources */,
+				EFC2F4F7222A88B90084BDDF /* Akzidenz-Grotesk-Next-Medium-Cond.otf in Resources */,
+				EFCB73E22210597F0070AE51 /* PXHowItFitsCell.xib in Resources */,
+				EFC2F4FA222A88C20084BDDF /* Akzidenz-Grotesk-Next-Medium-Italic.otf in Resources */,
+				EFC2F4FC222A88C70084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond-Italic.otf in Resources */,
+				EFC2F501222A88DA0084BDDF /* Akzidenz-Grotesk-Next-Regular.otf in Resources */,
+				EFC2F4FD222A88CA0084BDDF /* Akzidenz-Grotesk-Next-Regular-Cond.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51C55221F8BE5700ADDA2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51C55D21F8BE5700ADDA2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC2A661493A68D21A3A243B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixiboTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2058CB570330588EC56697BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixibo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D5E30803B87ECAB0B9C36D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixiboUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F7D26E93C3FB66261D9700B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pixibo/Pods-Pixibo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pixibo/Pods-Pixibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF51C53C21F8BE5500ADDA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6CF17A222EFE23002EBF2E /* UILabel+Extension.swift in Sources */,
+				EF51C57B21F9777500ADDA2F /* ViewController+Extension.swift in Sources */,
+				EFCB73E12210597F0070AE51 /* PXHowItFitsCell.swift in Sources */,
+				EF85AC2A21FF99540059C0B8 /* PXSizeTypeCell.swift in Sources */,
+				EF51C58121FC762000ADDA2F /* PXResultViewController.swift in Sources */,
+				EF48E0A6221C1363001AF3EF /* PXResultModel.swift in Sources */,
+				EF185FAA21FE12E60072FAB0 /* PXBraSizeCell.swift in Sources */,
+				EF185F9821FDD89E0072FAB0 /* UIColor+Extension.swift in Sources */,
+				EF29D07B22055F0600B31A4C /* PRBodyProfileModel.swift in Sources */,
+				EF185FB121FE29C90072FAB0 /* PXTextField.swift in Sources */,
+				EF51C57721F9708400ADDA2F /* PXBodyProfileViewController.swift in Sources */,
+				EF185FA521FDE4AA0072FAB0 /* PXHeaderTitleCell.swift in Sources */,
+				EF85AC1E21FF8BB80059C0B8 /* PXFitConfidenceCell.swift in Sources */,
+				EF185FA121FDE17E0072FAB0 /* NSObject+Extension.swift in Sources */,
+				EFCB73D9220EEBA20070AE51 /* PXJSONKeysConstant.swift in Sources */,
+				EF85AC2621FF97CA0059C0B8 /* PXResultSizeCell.swift in Sources */,
+				EF185F9E21FDDD380072FAB0 /* PXBodyProfileCell.swift in Sources */,
+				EF185FAE21FE24770072FAB0 /* UITextField+Extension.swift in Sources */,
+				EFC3973B222BEFC000F7FEC7 /* PXCustomPickerViewController.swift in Sources */,
+				EF3553EA220149CE00BB9833 /* PXPrivacyView.swift in Sources */,
+				EF85ABF121FF7DA10059C0B8 /* PXFitPrefCell.swift in Sources */,
+				EF185FB621FE3B8B0072FAB0 /* ViewController.swift in Sources */,
+				EFCB73DE220EF1F20070AE51 /* PXLoaderManager.swift in Sources */,
+				EF3553EE22020FB200BB9833 /* UIFont+Extension.swift in Sources */,
+				EF85ABEC21FF7C680059C0B8 /* TagView.swift in Sources */,
+				EF185F9621FDD8110072FAB0 /* PXButton.swift in Sources */,
+				EF85ABF421FF81D20059C0B8 /* PXTagView.swift in Sources */,
+				EF38E31E2230885200B0439F /* PXCustomSegment.swift in Sources */,
+				EF48E0A8221C1F27001AF3EF /* PXDataManager.swift in Sources */,
+				EF51C57F21FC75DD00ADDA2F /* PXFitPreferenceViewController.swift in Sources */,
+				EF51C58621FC844800ADDA2F /* PXConstant.swift in Sources */,
+				EF62557A2230273500BE7FAC /* CustomAlertView.swift in Sources */,
+				EF29D08622065F0300B31A4C /* PXResultSizeFailCell.swift in Sources */,
+				EF3553F02202149600BB9833 /* UINavigationbar+Extension.swift in Sources */,
+				EF29D07E22063D8C00B31A4C /* PXFitConfidenceNewCell.swift in Sources */,
+				EF185FB421FE35390072FAB0 /* PXPickerView.swift in Sources */,
+				EF51C58821FC845600ADDA2F /* PXUtility.swift in Sources */,
+				EF185F9B21FDDBDD0072FAB0 /* PXProgressView.swift in Sources */,
+				EFCB73DC220EF15D0070AE51 /* PXLoaderView.swift in Sources */,
+				EF29D083220645D600B31A4C /* UIImage+Extension.swift in Sources */,
+				EF51C54421F8BE5600ADDA2F /* AppDelegate.swift in Sources */,
+				EFCB73D7220EEB760070AE51 /* PXAPIConstant.swift in Sources */,
+				EF85AC2221FF8FB30059C0B8 /* SwiftyStarRatingView.swift in Sources */,
+				EF51C58B21FC851900ADDA2F /* PXWebServiceManager.swift in Sources */,
+				EF3553E72201491100BB9833 /* Popover.swift in Sources */,
+				EF29D089220669BF00B31A4C /* DataType+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51C55021F8BE5700ADDA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF51C55921F8BE5700ADDA2F /* PixiboTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51C55B21F8BE5700ADDA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF51C56421F8BE5700ADDA2F /* PixiboUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF51C55621F8BE5700ADDA2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF51C53F21F8BE5500ADDA2F /* Pixibo */;
+			targetProxy = EF51C55521F8BE5700ADDA2F /* PBXContainerItemProxy */;
+		};
+		EF51C56121F8BE5700ADDA2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF51C53F21F8BE5500ADDA2F /* Pixibo */;
+			targetProxy = EF51C56021F8BE5700ADDA2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF51C54721F8BE5600ADDA2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF51C54821F8BE5600ADDA2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF51C54C21F8BE5700ADDA2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF51C54D21F8BE5700ADDA2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF51C56621F8BE5700ADDA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF51C56721F8BE5700ADDA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF51C56921F8BE5700ADDA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E692A156C2278E9BA0748B3A /* Pods-Pixibo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7CGXTV72RV;
+				INFOPLIST_FILE = Pixibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixibo.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Pixibo_Prod_Profile;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF51C56A21F8BE5700ADDA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E63EFC2F376A8EAC38B5CC /* Pods-Pixibo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7CGXTV72RV;
+				INFOPLIST_FILE = Pixibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixibo.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Pixibo_Prod_Profile;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF51C56C21F8BE5700ADDA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1664BB2E841AEAB7B57868BB /* Pods-PixiboTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMZ27S2LL3;
+				INFOPLIST_FILE = PixiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixibo.PixiboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixibo.app/Pixibo";
+			};
+			name = Debug;
+		};
+		EF51C56D21F8BE5700ADDA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47F9CF22C4630C9A3B00430 /* Pods-PixiboTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMZ27S2LL3;
+				INFOPLIST_FILE = PixiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixibo.PixiboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixibo.app/Pixibo";
+			};
+			name = Release;
+		};
+		EF51C56F21F8BE5700ADDA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408FB156AA022C04EDA76131 /* Pods-PixiboUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMZ27S2LL3;
+				INFOPLIST_FILE = PixiboUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixibo.PixiboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixibo;
+			};
+			name = Debug;
+		};
+		EF51C57021F8BE5700ADDA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C43EA41D2E762752DA096B /* Pods-PixiboUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMZ27S2LL3;
+				INFOPLIST_FILE = PixiboUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixibo.PixiboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixibo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF51C53B21F8BE5500ADDA2F /* Build configuration list for PBXProject "Pixibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51C56621F8BE5700ADDA2F /* Debug */,
+				EF51C56721F8BE5700ADDA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF51C56821F8BE5700ADDA2F /* Build configuration list for PBXNativeTarget "Pixibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51C56921F8BE5700ADDA2F /* Debug */,
+				EF51C56A21F8BE5700ADDA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF51C56B21F8BE5700ADDA2F /* Build configuration list for PBXNativeTarget "PixiboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51C56C21F8BE5700ADDA2F /* Debug */,
+				EF51C56D21F8BE5700ADDA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF51C56E21F8BE5700ADDA2F /* Build configuration list for PBXNativeTarget "PixiboUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51C56F21F8BE5700ADDA2F /* Debug */,
+				EF51C57021F8BE5700ADDA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF51C53821F8BE5500ADDA2F /* Project object */;
+}

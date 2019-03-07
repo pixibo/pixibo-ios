@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akzidenz-Grotesk-Next-Medium-Extd.otf">
+            <string>AkGroteskNextWeb-MedExt</string>
+        </array>
+        <array key="Akzidenz-Grotesk-Next-Regular-Extd.otf">
+            <string>AkGroteskNextWeb-RegularExt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PXHowItFitsCell" rowHeight="197" id="KGk-i7-Jjw" customClass="PXHowItFitsCell" customModule="Pixibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="196.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEE HOW THIS ITEM FITS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhB-hF-JIo">
+                        <rect key="frame" x="16" y="20" width="256" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="MOD-Ja-RNQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyO-Mx-KX4">
+                        <rect key="frame" x="288" y="20" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="J7h-Nw-g5r"/>
+                            <constraint firstAttribute="height" constant="22" id="dYe-Z3-vu9"/>
+                        </constraints>
+                        <state key="normal" image="up-arrow"/>
+                        <connections>
+                            <action selector="expandButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ms9-YW-cOt"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="uI8-7Z-m2J">
+                        <rect key="frame" x="16" y="67" width="288" height="100"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-1w-7Wo">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="16.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oO5-VO-CFL">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ideal Fit" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh0-Cv-gaQ">
+                                        <rect key="frame" x="144" y="0.0" width="144" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4IM-SA-qsY">
+                                <rect key="frame" x="0.0" y="41.5" width="288" height="16.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAIST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-23-ZYo">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relaxed Fit" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjV-TP-7Ps">
+                                        <rect key="frame" x="144" y="0.0" width="144" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8eW-hc-gDA">
+                                <rect key="frame" x="0.0" y="83" width="288" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hv-8R-kOc">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="17"/>
+                                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Too Loose" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASI-S5-pSF">
+                                        <rect key="frame" x="144" y="0.0" width="144" height="17"/>
+                                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="ZBj-n6-FVe"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWZ-ZG-fBY">
+                        <rect key="frame" x="16" y="192" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Y5s-zn-wDq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bhB-hF-JIo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="13X-f1-WFo"/>
+                    <constraint firstAttribute="bottom" secondItem="GWZ-ZG-fBY" secondAttribute="bottom" id="1yH-eX-eGt"/>
+                    <constraint firstAttribute="trailing" secondItem="IyO-Mx-KX4" secondAttribute="trailing" constant="16" id="9oA-bk-uJZ"/>
+                    <constraint firstItem="GWZ-ZG-fBY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AIb-ly-EmB"/>
+                    <constraint firstItem="GWZ-ZG-fBY" firstAttribute="top" secondItem="uI8-7Z-m2J" secondAttribute="bottom" constant="25" id="HgJ-eC-yVO"/>
+                    <constraint firstItem="IyO-Mx-KX4" firstAttribute="leading" secondItem="bhB-hF-JIo" secondAttribute="trailing" constant="16" id="LVc-Vf-Mo3"/>
+                    <constraint firstItem="bhB-hF-JIo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Q6S-3b-yh2"/>
+                    <constraint firstItem="bhB-hF-JIo" firstAttribute="centerY" secondItem="IyO-Mx-KX4" secondAttribute="centerY" id="ffn-fQ-W6Z"/>
+                    <constraint firstItem="uI8-7Z-m2J" firstAttribute="top" secondItem="bhB-hF-JIo" secondAttribute="bottom" constant="25" id="t1d-7D-XsB"/>
+                    <constraint firstAttribute="trailing" secondItem="GWZ-ZG-fBY" secondAttribute="trailing" constant="16" id="vPR-dP-pGs"/>
+                    <constraint firstItem="uI8-7Z-m2J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wWr-x2-MGK"/>
+                    <constraint firstAttribute="trailing" secondItem="uI8-7Z-m2J" secondAttribute="trailing" constant="16" id="xhn-NY-kLH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bustFitDetail" destination="eh0-Cv-gaQ" id="1oZ-xO-veC"/>
+                <outlet property="bustTitle" destination="oO5-VO-CFL" id="Jnu-2v-Pob"/>
+                <outlet property="expandButton" destination="IyO-Mx-KX4" id="HtA-qK-sfp"/>
+                <outlet property="heightConstraint" destination="ZBj-n6-FVe" id="Wzv-dX-EGC"/>
+                <outlet property="hipsFitDetails" destination="ASI-S5-pSF" id="bPQ-5r-FNX"/>
+                <outlet property="hipsTitle" destination="8Hv-8R-kOc" id="v9n-El-DLj"/>
+                <outlet property="waistFitDetails" destination="wjV-TP-7Ps" id="R3H-rH-teE"/>
+                <outlet property="waistTitle" destination="uQ5-23-ZYo" id="Gxd-4S-Sgq"/>
+            </connections>
+            <point key="canvasLocation" x="68.799999999999997" y="68.815592203898049"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="up-arrow" width="14" height="8"/>
+    </resources>
+</document>

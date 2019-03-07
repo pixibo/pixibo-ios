@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akzidenz-Grotesk-Next-Medium-Extd.otf">
+            <string>AkGroteskNextWeb-MedExt</string>
+        </array>
+        <array key="Akzidenz-Grotesk-Next-Regular-Extd.otf">
+            <string>AkGroteskNextWeb-RegularExt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PXResultSizeCell" rowHeight="273" id="KGk-i7-Jjw" customClass="PXResultSizeCell" customModule="Pixibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="273"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="272.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOR THIS ITEM, YOU’LL LOOK BEST IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-C2-30k">
+                        <rect key="frame" x="16" y="5" width="288" height="81.5"/>
+                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Xa8-FD-fee">
+                        <rect key="frame" x="0.0" y="106.5" width="320" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="HQ4-2i-Nxt"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nib-u3-odV">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="yk5-Rk-usc"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="YKP-hO-tJU"/>
+                        </connections>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCt-bM-7Fh">
+                        <rect key="frame" x="20" y="120.5" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="fBG-wZ-Lj2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" image="leftArrow">
+                            <color key="titleColor" red="0.40486402529999999" green="0.47651909440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <connections>
+                            <action selector="slideToLeft:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KZF-gj-mhp"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-ah-zRg">
+                        <rect key="frame" x="270" y="120.5" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="bsu-lk-mVz"/>
+                        </constraints>
+                        <state key="normal" image="rightArrow"/>
+                        <connections>
+                            <action selector="slideToRight:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fNP-fz-7M0"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS CLOSET TO YOUR SIZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-Nj-eEv">
+                        <rect key="frame" x="76" y="176.5" width="168.5" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="1W7-Vs-YSs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Tec-2a-Ch7">
+                        <rect key="frame" x="78.5" y="208.5" width="163" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your preferred fit:  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J55-8S-1f4">
+                                <rect key="frame" x="0.0" y="0.0" width="111" height="24"/>
+                                <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owJ-1X-FFP">
+                                <rect key="frame" x="113" y="0.0" width="50" height="24"/>
+                                <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                                <state key="normal" title="Regular">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="regularButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="q6g-zc-ZZ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xa8-FD-fee" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="08m-my-74M"/>
+                    <constraint firstItem="HCt-bM-7Fh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1uy-Q9-fgn"/>
+                    <constraint firstItem="ApH-C2-30k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2gz-Ew-9Qw"/>
+                    <constraint firstItem="2Sk-Nj-eEv" firstAttribute="top" secondItem="Xa8-FD-fee" secondAttribute="bottom" constant="20" id="5jm-Ax-Awm"/>
+                    <constraint firstItem="Tec-2a-Ch7" firstAttribute="top" secondItem="Xa8-FD-fee" secondAttribute="bottom" constant="52" id="ARs-Md-nOG"/>
+                    <constraint firstItem="Xa8-FD-fee" firstAttribute="top" secondItem="ApH-C2-30k" secondAttribute="bottom" constant="20" id="JyL-AV-mUr"/>
+                    <constraint firstItem="Tec-2a-Ch7" firstAttribute="centerX" secondItem="Xa8-FD-fee" secondAttribute="centerX" id="VG9-f7-1Rg"/>
+                    <constraint firstItem="HCt-bM-7Fh" firstAttribute="centerY" secondItem="Xa8-FD-fee" secondAttribute="centerY" id="bbg-5D-dvN"/>
+                    <constraint firstItem="D2d-ah-zRg" firstAttribute="centerY" secondItem="Xa8-FD-fee" secondAttribute="centerY" id="hJC-sT-cBt"/>
+                    <constraint firstAttribute="bottom" secondItem="Tec-2a-Ch7" secondAttribute="bottom" constant="40" id="jYt-xQ-8Ok"/>
+                    <constraint firstItem="ApH-C2-30k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pgb-SK-wqb"/>
+                    <constraint firstItem="D2d-ah-zRg" firstAttribute="height" secondItem="HCt-bM-7Fh" secondAttribute="height" id="t4P-RM-wM7"/>
+                    <constraint firstItem="2Sk-Nj-eEv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ucB-pW-dZ1"/>
+                    <constraint firstAttribute="trailing" secondItem="D2d-ah-zRg" secondAttribute="trailing" constant="20" id="vPp-h7-Mp9"/>
+                    <constraint firstAttribute="trailing" secondItem="Xa8-FD-fee" secondAttribute="trailing" id="veh-Nd-MfD"/>
+                    <constraint firstAttribute="trailing" secondItem="ApH-C2-30k" secondAttribute="trailing" constant="16" id="xJb-hh-NRY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="closetLabelHeight" destination="1W7-Vs-YSs" id="WdT-xj-rUf"/>
+                <outlet property="closetLabelTopMargin" destination="5jm-Ax-Awm" id="bDO-aO-Afd"/>
+                <outlet property="leftSlideButton" destination="HCt-bM-7Fh" id="qKa-SW-WFT"/>
+                <outlet property="regularButton" destination="owJ-1X-FFP" id="FBU-US-Hfv"/>
+                <outlet property="regularLabelTopMargin" destination="ARs-Md-nOG" id="1OF-6U-ps0"/>
+                <outlet property="resultTitleLabel" destination="ApH-C2-30k" id="AuC-ed-ZSv"/>
+                <outlet property="rightSlideButton" destination="D2d-ah-zRg" id="Uur-1m-Sb3"/>
+                <outlet property="sizeCollectionView" destination="Xa8-FD-fee" id="Dn0-s7-So2"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="256.82158920539734"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="leftArrow" width="12" height="21"/>
+        <image name="rightArrow" width="12" height="21"/>
+    </resources>
+</document>

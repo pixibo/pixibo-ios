@@ -1,0 +1,6 @@
+framework module Pods_Pixibo {
+  umbrella header "Pods-Pixibo-umbrella.h"
+
+  export *
+  module * { export * }
+}

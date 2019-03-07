@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akzidenz-Grotesk-Next-Medium-Extd.otf">
+            <string>AkGroteskNextWeb-MedExt</string>
+        </array>
+        <array key="Akzidenz-Grotesk-Next-Regular.otf">
+            <string>AkGroteskNextWeb-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PXBraSizeCell" rowHeight="124" id="KGk-i7-Jjw" customClass="PXBraSizeCell" customModule="Pixibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRA SIZE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk5-Fb-DSU">
+                        <rect key="frame" x="16" y="25" width="288" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="i80-p8-EhR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UK" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="juS-tC-B2V" customClass="PXTextField" customModule="Pixibo" customModuleProvider="target">
+                        <rect key="frame" x="16" y="62" width="69.5" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="r8Q-h6-WWb"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="down-arrow"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Band" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-2h-26v" customClass="PXTextField" customModule="Pixibo" customModuleProvider="target">
+                        <rect key="frame" x="125.5" y="62" width="69" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="down-arrow"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cup" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qt7-A1-ifd" customClass="PXTextField" customModule="Pixibo" customModuleProvider="target">
+                        <rect key="frame" x="234.5" y="62" width="69.5" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="down-arrow"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQO-YA-fXg">
+                        <rect key="frame" x="16" y="92" width="69.5" height="1"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="CaR-Zk-j9F"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-mG-Z0J">
+                        <rect key="frame" x="125.5" y="93" width="69" height="1"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nru-dw-yey">
+                        <rect key="frame" x="234.5" y="93" width="69.5" height="1"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please complete all three sections to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU4-Pi-O2j">
+                        <rect key="frame" x="46.5" y="108" width="227.5" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="gKx-Gd-UIh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AkGroteskNextWeb-Regular" family="Akzidenz Grotesk Next Web" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="juS-tC-B2V" firstAttribute="top" secondItem="rk5-Fb-DSU" secondAttribute="bottom" constant="25" id="03m-aW-xJW"/>
+                    <constraint firstItem="mTA-mG-Z0J" firstAttribute="width" secondItem="mQO-YA-fXg" secondAttribute="width" id="25c-73-zF8"/>
+                    <constraint firstItem="mTA-mG-Z0J" firstAttribute="centerX" secondItem="fuF-2h-26v" secondAttribute="centerX" id="7mF-2p-uv8"/>
+                    <constraint firstItem="mTA-mG-Z0J" firstAttribute="top" secondItem="fuF-2h-26v" secondAttribute="bottom" constant="1" id="AP9-41-3ip"/>
+                    <constraint firstItem="Nru-dw-yey" firstAttribute="width" secondItem="mTA-mG-Z0J" secondAttribute="width" id="E2q-Bi-2kW"/>
+                    <constraint firstItem="mTA-mG-Z0J" firstAttribute="height" secondItem="mQO-YA-fXg" secondAttribute="height" id="FmR-E2-qkw"/>
+                    <constraint firstItem="Nru-dw-yey" firstAttribute="centerX" secondItem="qt7-A1-ifd" secondAttribute="centerX" id="GgR-PC-3RN"/>
+                    <constraint firstItem="fuF-2h-26v" firstAttribute="height" secondItem="qt7-A1-ifd" secondAttribute="height" id="Ghy-te-E6A"/>
+                    <constraint firstItem="rk5-Fb-DSU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="QPX-qE-PTd"/>
+                    <constraint firstItem="juS-tC-B2V" firstAttribute="top" secondItem="fuF-2h-26v" secondAttribute="top" id="QYm-KT-qsc"/>
+                    <constraint firstItem="mQO-YA-fXg" firstAttribute="width" secondItem="juS-tC-B2V" secondAttribute="width" id="Si6-Xn-EvW"/>
+                    <constraint firstItem="Nru-dw-yey" firstAttribute="height" secondItem="mTA-mG-Z0J" secondAttribute="height" id="Ufw-7r-uMX"/>
+                    <constraint firstItem="juS-tC-B2V" firstAttribute="width" secondItem="fuF-2h-26v" secondAttribute="width" id="XyF-3e-W4D"/>
+                    <constraint firstAttribute="trailing" secondItem="rk5-Fb-DSU" secondAttribute="trailing" constant="16" id="Zjj-u0-Vry"/>
+                    <constraint firstItem="fuF-2h-26v" firstAttribute="width" secondItem="qt7-A1-ifd" secondAttribute="width" id="b2H-KJ-lRk"/>
+                    <constraint firstItem="cU4-Pi-O2j" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bkD-Pd-31x"/>
+                    <constraint firstItem="rk5-Fb-DSU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bxX-Vh-f0o"/>
+                    <constraint firstItem="qt7-A1-ifd" firstAttribute="leading" secondItem="fuF-2h-26v" secondAttribute="trailing" constant="40" id="daa-0k-icb"/>
+                    <constraint firstItem="fuF-2h-26v" firstAttribute="top" secondItem="qt7-A1-ifd" secondAttribute="top" id="eKQ-VQ-JFX"/>
+                    <constraint firstItem="fuF-2h-26v" firstAttribute="leading" secondItem="juS-tC-B2V" secondAttribute="trailing" constant="40" id="eMI-uw-ena"/>
+                    <constraint firstItem="cU4-Pi-O2j" firstAttribute="top" secondItem="mTA-mG-Z0J" secondAttribute="bottom" constant="14" id="eWY-h5-jyL"/>
+                    <constraint firstItem="mQO-YA-fXg" firstAttribute="centerX" secondItem="juS-tC-B2V" secondAttribute="centerX" id="eau-PV-49L"/>
+                    <constraint firstItem="mQO-YA-fXg" firstAttribute="top" secondItem="juS-tC-B2V" secondAttribute="bottom" id="jex-Pi-1D9"/>
+                    <constraint firstAttribute="trailing" secondItem="qt7-A1-ifd" secondAttribute="trailing" constant="16" id="miV-au-0iU"/>
+                    <constraint firstItem="juS-tC-B2V" firstAttribute="leading" secondItem="rk5-Fb-DSU" secondAttribute="leading" id="qee-0k-MEd"/>
+                    <constraint firstItem="juS-tC-B2V" firstAttribute="height" secondItem="fuF-2h-26v" secondAttribute="height" id="r7E-J0-zBT"/>
+                    <constraint firstItem="Nru-dw-yey" firstAttribute="top" secondItem="qt7-A1-ifd" secondAttribute="bottom" constant="1" id="uZk-TX-FLu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bandErrorView" destination="mTA-mG-Z0J" id="QcD-PW-LeL"/>
+                <outlet property="bandTextField" destination="fuF-2h-26v" id="3He-Ou-gN2"/>
+                <outlet property="cupErrorView" destination="Nru-dw-yey" id="cPw-3A-UZy"/>
+                <outlet property="cupSizeTextField" destination="qt7-A1-ifd" id="PDC-o6-ONo"/>
+                <outlet property="errorLabel" destination="cU4-Pi-O2j" id="7lu-3y-cHA"/>
+                <outlet property="regionErrorView" destination="mQO-YA-fXg" id="ACV-nc-jrV"/>
+                <outlet property="zoneTextField" destination="juS-tC-B2V" id="yXt-nU-HLh"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="205.99700149925039"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down-arrow" width="16" height="10"/>
+    </resources>
+</document>

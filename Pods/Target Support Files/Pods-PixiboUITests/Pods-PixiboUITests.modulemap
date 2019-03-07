@@ -1,0 +1,6 @@
+framework module Pods_PixiboUITests {
+  umbrella header "Pods-PixiboUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
