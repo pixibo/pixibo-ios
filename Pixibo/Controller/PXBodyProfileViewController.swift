@@ -108,7 +108,7 @@ class PXBodyProfileViewController: UIViewController {
         customAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         customAlert.okButtonHandler = {
-            
+            self.nextButtonClicked(true)
         }
         self.present(customAlert, animated: true, completion: nil)
     }

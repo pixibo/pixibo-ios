@@ -8,7 +8,14 @@
 
 struct PXAPIConstant {
     
-    static let BASE_URL:String = "http://sizeguidev2.pixibo.com/asset/qxfgc8rhrozb/22578"
+    static var BASE_URL:String = "http://sizeguidev2.pixibo.com/asset/"
+    static var skuID: String!
+    static var clientID: String!
+    
+    static func getBaseUrl() -> String{
+        
+        return PXAPIConstant.BASE_URL + clientID + "/" + skuID
+    }
     
     typealias responseBlock = (_ result: AnyObject?, _ error: Error?) -> Void
     

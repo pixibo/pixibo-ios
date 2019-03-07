@@ -22,25 +22,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getYourSizeButtonClicked(_ sender: Any) {
-        loadPixiboController()
+        Pixibo.presentFyf(withSKUId: "22578")
+        
     }
     
     
-    func loadPixiboController() {
-        let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)
-        let VC1 = storyBoard.instantiateViewController(withIdentifier: "PXBodyProfileViewController") as! UINavigationController
-        if let _ = PXDataManager.sharedManager.resultModel {
-            let fitVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXFitPreferenceViewController)
-            let resultVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXResultViewController) as! PXResultViewController
-            resultVC.result = true
-            VC1.viewControllers.append(fitVC)
-            VC1.viewControllers.append(resultVC)
-        }
-       
-        self.present(VC1, animated:false, completion: nil)
-
-    }
-    
+        
     /*
      func moveTo() {
      let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)

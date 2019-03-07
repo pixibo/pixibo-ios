@@ -83,6 +83,34 @@ class PXUtility {
         }
         return nil
     }
+    
+    class func loadPixiboController() {
+        let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)
+        let VC1 = storyBoard.instantiateViewController(withIdentifier: "PXBodyProfileViewController") as! UINavigationController
+        if let _ = PXDataManager.sharedManager.resultModel {
+            let fitVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXFitPreferenceViewController)
+            let resultVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXResultViewController) as! PXResultViewController
+            resultVC.result = true
+            VC1.viewControllers.append(fitVC)
+            VC1.viewControllers.append(resultVC)
+        }
+        
+        getTopMostController()?.present(VC1, animated:false, completion: nil)
+        
+    }
+
+    class func addAlert() {
+        let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)
+        let customAlert = storyBoard.instantiateViewController(withIdentifier: "CustomAlertID") as! CustomAlertView
+        customAlert.providesPresentationContextTransitionStyle = true
+        customAlert.definesPresentationContext = true
+        customAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        customAlert.okButtonHandler = {
+            
+        }
+        getTopMostController()?.present(customAlert, animated: true, completion: nil)
+    }
 
     static func addCustomLoader(with width: CGFloat) -> LOTAnimationView{
         let animation = LOTAnimationView(name: "Pomelo_Loading")

@@ -24,8 +24,17 @@ class PXWebServiceManager: NSObject {
         super.init()
     }
     
+    func validateSKUId(params: [String: String], onCompletion : @escaping PXAPIConstant.responseBlock) {
+        let url = PXAPIConstant.getBaseUrl()
+        
+        let request = self.prepareGetRequest(url: url, params: params)
+        requestServerWith(request: request) { (response, error) in
+            onCompletion(response, error)
+        }
+    }
+    
     func getSizeRecommendation(params: [String: String], onCompletion : @escaping PXAPIConstant.responseBlock) {
-        let url = PXAPIConstant.BASE_URL
+        let url = PXAPIConstant.getBaseUrl()
         
         let request = self.prepareGetRequest(url: url, params: params)
         requestServerWith(request: request) { (response, error) in
@@ -59,9 +68,15 @@ private extension PXWebServiceManager {
                 onCompletion(json, nil)
                 break
             case PXAPIConstant.httpsStatusCode.pageNotFound:
-                onCompletion(nil, error)
+                let errorTemp = NSError(domain:"400", code:httpResponse.statusCode, userInfo:nil)
+                onCompletion(nil, errorTemp)
+                break
+            case PXAPIConstant.httpsStatusCode.notFound:
+                let errorTemp = NSError(domain:"404", code:httpResponse.statusCode, userInfo:nil)
+                onCompletion(nil, errorTemp)
                 break
             default:
+                let errorTemp = NSError(domain:"-1000", code:httpResponse.statusCode, userInfo:nil)
                 onCompletion(nil, error)
             }
         }

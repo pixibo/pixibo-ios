@@ -54,6 +54,7 @@
 		EF51C58621FC844800ADDA2F /* PXConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C58521FC844800ADDA2F /* PXConstant.swift */; };
 		EF51C58821FC845600ADDA2F /* PXUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C58721FC845600ADDA2F /* PXUtility.swift */; };
 		EF51C58B21FC851900ADDA2F /* PXWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51C58A21FC851900ADDA2F /* PXWebServiceManager.swift */; };
+		EF5A8F7A2230F57E00F74EDD /* Pixibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A8F792230F57E00F74EDD /* Pixibo.swift */; };
 		EF62557A2230273500BE7FAC /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6255792230273500BE7FAC /* CustomAlertView.swift */; };
 		EF62565022302F9A00BE7FAC /* Pomelo_Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = EF62564F22302F9900BE7FAC /* Pomelo_Loading.json */; };
 		EF6CF17A222EFE23002EBF2E /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6CF179222EFE23002EBF2E /* UILabel+Extension.swift */; };
@@ -166,6 +167,7 @@
 		EF51C58521FC844800ADDA2F /* PXConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXConstant.swift; sourceTree = "<group>"; };
 		EF51C58721FC845600ADDA2F /* PXUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXUtility.swift; sourceTree = "<group>"; };
 		EF51C58A21FC851900ADDA2F /* PXWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXWebServiceManager.swift; sourceTree = "<group>"; };
+		EF5A8F792230F57E00F74EDD /* Pixibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixibo.swift; sourceTree = "<group>"; };
 		EF6255792230273500BE7FAC /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		EF62564F22302F9900BE7FAC /* Pomelo_Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pomelo_Loading.json; sourceTree = "<group>"; };
 		EF6CF179222EFE23002EBF2E /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
@@ -471,6 +473,7 @@
 				EFCB73D8220EEBA20070AE51 /* PXJSONKeysConstant.swift */,
 				EF51C58721FC845600ADDA2F /* PXUtility.swift */,
 				EFCB73DD220EF1F20070AE51 /* PXLoaderManager.swift */,
+				EF5A8F792230F57E00F74EDD /* Pixibo.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				EF185FA521FDE4AA0072FAB0 /* PXHeaderTitleCell.swift in Sources */,
 				EF85AC1E21FF8BB80059C0B8 /* PXFitConfidenceCell.swift in Sources */,
 				EF185FA121FDE17E0072FAB0 /* NSObject+Extension.swift in Sources */,
+				EF5A8F7A2230F57E00F74EDD /* Pixibo.swift in Sources */,
 				EFCB73D9220EEBA20070AE51 /* PXJSONKeysConstant.swift in Sources */,
 				EF85AC2621FF97CA0059C0B8 /* PXResultSizeCell.swift in Sources */,
 				EF185F9E21FDDD380072FAB0 /* PXBodyProfileCell.swift in Sources */,

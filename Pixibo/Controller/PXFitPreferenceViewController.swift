@@ -143,7 +143,7 @@ class PXFitPreferenceViewController: UIViewController {
         customAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         customAlert.okButtonHandler = {
-            
+            self.fetchUpdatedSizePref()
         }
         self.present(customAlert, animated: true, completion: nil)
     }
