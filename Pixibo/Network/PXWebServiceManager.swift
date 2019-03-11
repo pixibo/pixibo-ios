@@ -93,7 +93,9 @@ private extension PXWebServiceManager {
     func prepareGetRequest(url: String, params: [String: String]) -> URLRequest {
         var modifiedParam = params
         modifiedParam["uid"] = PXUtility.getUniqueID()
-        modifiedParam["altId"] = PXUtility.getUniqueID()
+        if let altId = PXAPIConstant.getAltId() {
+            modifiedParam["altId"] = altId
+        }
         
         var components = URLComponents(string: url)!
         components.queryItems = modifiedParam.map { (key, value) in

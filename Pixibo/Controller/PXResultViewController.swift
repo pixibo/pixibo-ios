@@ -19,13 +19,13 @@ class PXResultViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         addLeftBarButton("back", self, action: #selector(didUserClickeLeftButton))
-        self.navigationItem.title = "YOUR SIZE"
+        self.title = "YOUR SIZE"
         selectedFys = PXDataManager.sharedManager.resultModel?.resultArr.first
         loadXIB()
         addToBagButton.setUpPrimaryButton()
         backButton.setUpSecondaryButton()
         backButton.addBorder()
-        resultTableView.estimatedRowHeight = 175
+        resultTableView.estimatedRowHeight = 90
         resultTableView.rowHeight = UITableView.automaticDimension
         if result {
             addToBagButton.setTitle("ADD TO BAG", for: .normal)
@@ -41,9 +41,6 @@ class PXResultViewController: UIViewController {
         
         let size = UINib(nibName: PXResultSizeCell.className, bundle: Bundle.main)
         resultTableView.register(size, forCellReuseIdentifier: PXResultSizeCell.className)
-        
-        let sizeFail = UINib(nibName: PXResultSizeFailCell.className, bundle: Bundle.main)
-        resultTableView.register(sizeFail, forCellReuseIdentifier: PXResultSizeFailCell.className)
         
         let nib1 = UINib(nibName: PXHowItFitsCell.className, bundle: Bundle.main)
         resultTableView.register(nib1, forCellReuseIdentifier: PXHowItFitsCell.className)
@@ -70,6 +67,7 @@ class PXResultViewController: UIViewController {
         }else {
             self.navigationController?.popToRootViewController(animated: false)
         }
+        PXDataManager.sharedManager.reset()
     }
     
     @IBAction func addToBagButtonClicked(_ sender: Any) {
@@ -101,7 +99,7 @@ extension PXResultViewController: UITableViewDataSource {
         if !result {
             return 42
         }
-        return 0
+        return CGFloat.leastNormalMagnitude
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -121,7 +119,7 @@ extension PXResultViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PXResultSizeCell.className) as? PXResultSizeCell
                 else { return UITableViewCell()}
             cell.delegate = self
-            // cell.setUp()
+            cell.setTitlTopMargin(isAvailable: result)
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PXFitConfidenceNewCell.className) as? PXFitConfidenceNewCell
@@ -145,17 +143,11 @@ extension PXResultViewController: UITableViewDataSource {
 extension PXResultViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-//        if indexPath.row == 2 {
-//            let emailCell = tableView.cellForRow(at: indexPath) as! PXHowItFitsCell
-//            emailCell.expanded = emailCell.expanded == false ? true : false
-//            tableView.reloadRows(at: [indexPath], with: .automatic)
-//        }
-        
     }
     
 }
 
-extension PXResultViewController: PXResultSizeFailCellDelegate, PXResultSizeCellDelegate {
+extension PXResultViewController: PXResultSizeCellDelegate {
     func didClickedOnRegularButton() {
         self.navigationController?.popViewController(animated: true)
     }
@@ -165,3 +157,20 @@ extension PXResultViewController: PXResultSizeFailCellDelegate, PXResultSizeCell
     }
 }
 
+//extension PXResultViewController: PXHowItFitsCellDelegate {
+//    func didClickedOnExpandButton() {
+//        let indexPath = IndexPath(row: 2, section: 0)
+//
+//        let emailCell = resultTableView.cellForRow(at: indexPath) as! PXHowItFitsCell
+//        emailCell.audioPlaybackView.isHidden = !emailCell.audioPlaybackView.isHidden
+//        if emailCell.audioPlaybackView.isHidden {
+//            expandedCellPaths = true
+//        } else {
+//            expandedCellPaths = false
+//        }
+//        resultTableView.beginUpdates()
+//        resultTableView.reloadRows(at: [indexPath], with: .fade)
+//        resultTableView.endUpdates()
+//    }
+//
+//}

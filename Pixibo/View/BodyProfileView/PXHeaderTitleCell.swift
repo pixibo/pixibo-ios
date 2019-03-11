@@ -13,10 +13,11 @@ class PXHeaderTitleCell: UITableViewHeaderFooterView {
     @IBOutlet weak var titleLabel: UILabel!
     
     
-    func updateUI(color: UIColor, title: String, textColor: UIColor = UIColor.black) {
+    func updateUI(color: UIColor, title: String, textColor: UIColor = UIColor.black, lineHeight:CGFloat = 0) {
         containerView.backgroundColor = color
         titleLabel.textColor = textColor
         titleLabel.text = title
+        titleLabel.setLineHeight(lineHeight: lineHeight)
         titleLabel.textAlignment = .center
     }
     

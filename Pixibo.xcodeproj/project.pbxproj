@@ -30,8 +30,6 @@
 		EF29D07F22063D8C00B31A4C /* PXFitConfidenceNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF29D07D22063D8C00B31A4C /* PXFitConfidenceNewCell.xib */; };
 		EF29D081220644D000B31A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF29D080220644D000B31A4C /* Assets.xcassets */; };
 		EF29D083220645D600B31A4C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D082220645D600B31A4C /* UIImage+Extension.swift */; };
-		EF29D08622065F0300B31A4C /* PXResultSizeFailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D08422065F0300B31A4C /* PXResultSizeFailCell.swift */; };
-		EF29D08722065F0300B31A4C /* PXResultSizeFailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF29D08522065F0300B31A4C /* PXResultSizeFailCell.xib */; };
 		EF29D089220669BF00B31A4C /* DataType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29D088220669BF00B31A4C /* DataType+Extension.swift */; };
 		EF3553E72201491100BB9833 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3553E62201491100BB9833 /* Popover.swift */; };
 		EF3553EA220149CE00BB9833 /* PXPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3553E9220149CE00BB9833 /* PXPrivacyView.swift */; };
@@ -58,6 +56,7 @@
 		EF62557A2230273500BE7FAC /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6255792230273500BE7FAC /* CustomAlertView.swift */; };
 		EF62565022302F9A00BE7FAC /* Pomelo_Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = EF62564F22302F9900BE7FAC /* Pomelo_Loading.json */; };
 		EF6CF17A222EFE23002EBF2E /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6CF179222EFE23002EBF2E /* UILabel+Extension.swift */; };
+		EF7C3B2B22336AD0004F5E82 /* PXAnimatedLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C3B2A22336AD0004F5E82 /* PXAnimatedLoaderView.swift */; };
 		EF85ABEC21FF7C680059C0B8 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85ABEB21FF7C680059C0B8 /* TagView.swift */; };
 		EF85ABF121FF7DA10059C0B8 /* PXFitPrefCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85ABEF21FF7DA10059C0B8 /* PXFitPrefCell.swift */; };
 		EF85ABF221FF7DA10059C0B8 /* PXFitPrefCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF85ABF021FF7DA10059C0B8 /* PXFitPrefCell.xib */; };
@@ -137,8 +136,6 @@
 		EF29D07D22063D8C00B31A4C /* PXFitConfidenceNewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXFitConfidenceNewCell.xib; sourceTree = "<group>"; };
 		EF29D080220644D000B31A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF29D082220645D600B31A4C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		EF29D08422065F0300B31A4C /* PXResultSizeFailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXResultSizeFailCell.swift; sourceTree = "<group>"; };
-		EF29D08522065F0300B31A4C /* PXResultSizeFailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXResultSizeFailCell.xib; sourceTree = "<group>"; };
 		EF29D088220669BF00B31A4C /* DataType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataType+Extension.swift"; sourceTree = "<group>"; };
 		EF3553E62201491100BB9833 /* Popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
 		EF3553E9220149CE00BB9833 /* PXPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXPrivacyView.swift; sourceTree = "<group>"; };
@@ -171,6 +168,7 @@
 		EF6255792230273500BE7FAC /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		EF62564F22302F9900BE7FAC /* Pomelo_Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pomelo_Loading.json; sourceTree = "<group>"; };
 		EF6CF179222EFE23002EBF2E /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		EF7C3B2A22336AD0004F5E82 /* PXAnimatedLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAnimatedLoaderView.swift; sourceTree = "<group>"; };
 		EF85ABEB21FF7C680059C0B8 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		EF85ABEF21FF7DA10059C0B8 /* PXFitPrefCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXFitPrefCell.swift; sourceTree = "<group>"; };
 		EF85ABF021FF7DA10059C0B8 /* PXFitPrefCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PXFitPrefCell.xib; sourceTree = "<group>"; };
@@ -540,8 +538,6 @@
 		EF85AC2321FF97AC0059C0B8 /* ResultView */ = {
 			isa = PBXGroup;
 			children = (
-				EF29D08422065F0300B31A4C /* PXResultSizeFailCell.swift */,
-				EF29D08522065F0300B31A4C /* PXResultSizeFailCell.xib */,
 				EF85AC2421FF97CA0059C0B8 /* PXResultSizeCell.swift */,
 				EF85AC2521FF97CA0059C0B8 /* PXResultSizeCell.xib */,
 				EF85AC2821FF99540059C0B8 /* PXSizeTypeCell.swift */,
@@ -556,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				EFCB73DB220EF15D0070AE51 /* PXLoaderView.swift */,
+				EF7C3B2A22336AD0004F5E82 /* PXAnimatedLoaderView.swift */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -687,7 +684,6 @@
 				EF185FAB21FE12E60072FAB0 /* PXBraSizeCell.xib in Resources */,
 				EFC2F510222A98310084BDDF /* Roboto-Bold.ttf in Resources */,
 				EF29D07F22063D8C00B31A4C /* PXFitConfidenceNewCell.xib in Resources */,
-				EF29D08722065F0300B31A4C /* PXResultSizeFailCell.xib in Resources */,
 				EFC2F500222A88D50084BDDF /* Akzidenz-Grotesk-Next-Regular-Italic.otf in Resources */,
 				EF3553EC220149E200BB9833 /* PXPrivacyView.xib in Resources */,
 				EF185F9F21FDDD380072FAB0 /* PXBodyProfileCell.xib in Resources */,
@@ -840,6 +836,7 @@
 				EFCB73DE220EF1F20070AE51 /* PXLoaderManager.swift in Sources */,
 				EF3553EE22020FB200BB9833 /* UIFont+Extension.swift in Sources */,
 				EF85ABEC21FF7C680059C0B8 /* TagView.swift in Sources */,
+				EF7C3B2B22336AD0004F5E82 /* PXAnimatedLoaderView.swift in Sources */,
 				EF185F9621FDD8110072FAB0 /* PXButton.swift in Sources */,
 				EF85ABF421FF81D20059C0B8 /* PXTagView.swift in Sources */,
 				EF38E31E2230885200B0439F /* PXCustomSegment.swift in Sources */,
@@ -847,7 +844,6 @@
 				EF51C57F21FC75DD00ADDA2F /* PXFitPreferenceViewController.swift in Sources */,
 				EF51C58621FC844800ADDA2F /* PXConstant.swift in Sources */,
 				EF62557A2230273500BE7FAC /* CustomAlertView.swift in Sources */,
-				EF29D08622065F0300B31A4C /* PXResultSizeFailCell.swift in Sources */,
 				EF3553F02202149600BB9833 /* UINavigationbar+Extension.swift in Sources */,
 				EF29D07E22063D8C00B31A4C /* PXFitConfidenceNewCell.swift in Sources */,
 				EF185FB421FE35390072FAB0 /* PXPickerView.swift in Sources */,

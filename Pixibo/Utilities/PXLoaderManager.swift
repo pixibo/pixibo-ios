@@ -12,6 +12,7 @@ class PXLoaderManager {
     
     static let sharedManager  = PXLoaderManager()
     let loaderView = PXLoaderView(frame: UIScreen.main.bounds)
+    let animatedLoaderView = PXAnimatedLoaderView(frame: UIScreen.main.bounds)
     
     func show() {
         UIApplication.shared.keyWindow?.addSubview(loaderView)
@@ -20,6 +21,16 @@ class PXLoaderManager {
     func hide() {
         DispatchQueue.main.async {
             self.loaderView.removeFromSuperview()
+        }
+    }
+    
+    func showAnimated() {
+        UIApplication.shared.keyWindow?.addSubview(animatedLoaderView)
+    }
+    
+    func hideAnimated() {
+        DispatchQueue.main.async {
+            self.animatedLoaderView.removeFromSuperview()
         }
     }
 }

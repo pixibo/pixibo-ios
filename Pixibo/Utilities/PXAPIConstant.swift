@@ -11,10 +11,15 @@ struct PXAPIConstant {
     static var BASE_URL:String = "http://sizeguidev2.pixibo.com/asset/"
     static var skuID: String!
     static var clientID: String!
+    static var altID: String?
     
     static func getBaseUrl() -> String{
         
         return PXAPIConstant.BASE_URL + clientID + "/" + skuID
+    }
+    
+    static func getAltId() -> String? {
+        return altID
     }
     
     typealias responseBlock = (_ result: AnyObject?, _ error: Error?) -> Void

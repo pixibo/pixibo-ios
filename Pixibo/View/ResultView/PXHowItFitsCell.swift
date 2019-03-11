@@ -18,11 +18,15 @@ class PXHowItFitsCell: UITableViewCell {
     @IBOutlet weak var hipsFitDetails: UILabel!
     @IBOutlet weak var hipsTitle: UILabel!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
-    var expanded: Bool = false
+    @IBOutlet weak var audioPlaybackView: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        heightConstraint.constant = 136.5
+        expandButton.isSelected = false
+        audioPlaybackView.isHidden = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,15 +36,12 @@ class PXHowItFitsCell: UITableViewCell {
     }
     
     @IBAction func expandButtonClicked(_ sender: Any) {
-        
+        audioPlaybackView.isHidden = !audioPlaybackView.isHidden
+        heightConstraint.constant = expandButton.isSelected ? 136.5 : 23
+        expandButton.isSelected = !expandButton.isSelected
     }
     
     func updateUI(data: fys) {
-//        if expanded {
-//            heightConstraint.constant = 100
-//        }else {
-//            heightConstraint.constant = 0
-//        }
         if let bustc = data.bustCode {
             setFitDescString(type: bustc, label: bustFitDetail)
         }
@@ -50,9 +51,6 @@ class PXHowItFitsCell: UITableViewCell {
         if let hipc = data.hipCode {
             setFitDescString(type: hipc, label: hipsFitDetails)
         }
-        layoutSubviews()
-        updateConstraints()
-        
     }
     
     func setFitDescString(type: Int, label: UILabel) {

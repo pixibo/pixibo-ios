@@ -22,11 +22,6 @@ class PXDataManager: NSObject {
         setEntryPageTitle(title: "FIND MY SIZE")
     }
 
-    func resetDataManager() {
-        resultModel = nil
-        fitPrefParams = [:]
-    }
-    
     func setEntryPageTitle(title: String) {
         let mutableAttributedString = NSMutableAttributedString()
 
@@ -75,5 +70,13 @@ class PXDataManager: NSObject {
         mutableAttributedString.append(regularAttributedString)
         mutableAttributedString.append(boldAttributedString)
         pdpPageString = mutableAttributedString
+    }
+    
+    func reset() {
+        resultModel = nil
+        selectedFirPrefType = PXConstant.firPrefType.PXRegular
+        setEntryPageTitle(title: "FIND MY SIZE")
+        fitPrefParams = [:]
+
     }
 }

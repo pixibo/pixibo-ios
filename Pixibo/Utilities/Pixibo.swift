@@ -10,12 +10,15 @@ import UIKit
 
 class Pixibo {
     
-    class func initialize(forClientId: String) {
+    class func initialize(forClientId: String, withAltId: String? = nil) {
         PXAPIConstant.clientID = forClientId
+        PXAPIConstant.altID = withAltId
     }
     
-    class func presentFyf(withSKUId: String) {
+    class func presentFyf(withSKUId: String, withAltId: String? = nil) {
         PXAPIConstant.skuID = withSKUId
+        PXAPIConstant.altID = withAltId
+        
         if let _ = PXAPIConstant.clientID,
             let _ = PXAPIConstant.skuID{
             PXWebServiceManager.sharedManager.validateSKUId(params: [:]) { (response, error) in

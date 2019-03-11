@@ -28,7 +28,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOR THIS ITEM, YOU’LL LOOK BEST IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-C2-30k">
-                        <rect key="frame" x="16" y="5" width="288" height="81.5"/>
+                        <rect key="frame" x="16" y="40" width="288" height="46.5"/>
                         <fontDescription key="fontDescription" name="AkGroteskNextWeb-MedExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -72,8 +72,8 @@
                             <action selector="slideToRight:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fNP-fz-7M0"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS CLOSET TO YOUR SIZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-Nj-eEv">
-                        <rect key="frame" x="76" y="176.5" width="168.5" height="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS CLOSEST TO YOUR SIZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-Nj-eEv">
+                        <rect key="frame" x="71.5" y="176.5" width="177" height="12"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="12" id="1W7-Vs-YSs"/>
                         </constraints>
@@ -105,7 +105,7 @@
                 <constraints>
                     <constraint firstItem="Xa8-FD-fee" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="08m-my-74M"/>
                     <constraint firstItem="HCt-bM-7Fh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1uy-Q9-fgn"/>
-                    <constraint firstItem="ApH-C2-30k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2gz-Ew-9Qw"/>
+                    <constraint firstItem="ApH-C2-30k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="2gz-Ew-9Qw"/>
                     <constraint firstItem="2Sk-Nj-eEv" firstAttribute="top" secondItem="Xa8-FD-fee" secondAttribute="bottom" constant="20" id="5jm-Ax-Awm"/>
                     <constraint firstItem="Tec-2a-Ch7" firstAttribute="top" secondItem="Xa8-FD-fee" secondAttribute="bottom" constant="52" id="ARs-Md-nOG"/>
                     <constraint firstItem="Xa8-FD-fee" firstAttribute="top" secondItem="ApH-C2-30k" secondAttribute="bottom" constant="20" id="JyL-AV-mUr"/>
@@ -131,6 +131,7 @@
                 <outlet property="resultTitleLabel" destination="ApH-C2-30k" id="AuC-ed-ZSv"/>
                 <outlet property="rightSlideButton" destination="D2d-ah-zRg" id="Uur-1m-Sb3"/>
                 <outlet property="sizeCollectionView" destination="Xa8-FD-fee" id="Dn0-s7-So2"/>
+                <outlet property="titleTopMargin" destination="2gz-Ew-9Qw" id="yvf-ne-aZ1"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="256.82158920539734"/>
         </tableViewCell>

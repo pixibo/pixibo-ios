@@ -22,26 +22,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getYourSizeButtonClicked(_ sender: Any) {
-        Pixibo.presentFyf(withSKUId: "22578")
+        Pixibo.presentFyf(withSKUId: "p23209", withAltId: "user_id")
         
     }
-    
-    
-        
-    /*
-     func moveTo() {
-     let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)
-     let fitVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXFitPreferenceViewController)
-     self.navigationController?.pushViewController(fitVC, animated: true)
-     }
-     
-     func moveToResultController(result: Bool) {
-     let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)
-     let resultVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXResultViewController) as? PXResultViewController
-     resultVC?.result = result
-     self.navigationController?.pushViewController(resultVC!, animated: true)
-     }
-     
-     */
 }
 

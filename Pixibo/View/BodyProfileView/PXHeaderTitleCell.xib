@@ -33,6 +33,9 @@
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just enter your height, weight and bra size. We'll do the rest." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4c-md-mWb">
                             <rect key="frame" x="16" y="15" width="356" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="lzl-gd-UDF"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="AkGroteskNextWeb-RegularExt" family="Akzidenz Grotesk Next Web" pointSize="12"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -42,7 +45,6 @@
                         <constraint firstAttribute="trailing" secondItem="kIE-lM-TgD" secondAttribute="trailing" id="B6a-Sx-BBO"/>
                         <constraint firstItem="O4c-md-mWb" firstAttribute="top" secondItem="kIE-lM-TgD" secondAttribute="bottom" constant="14" id="Ef8-WQ-ouR"/>
                         <constraint firstItem="kIE-lM-TgD" firstAttribute="leading" secondItem="wjt-vW-rPP" secondAttribute="leading" id="KMB-Gc-tF7"/>
-                        <constraint firstItem="O4c-md-mWb" firstAttribute="centerY" secondItem="wjt-vW-rPP" secondAttribute="centerY" id="Uba-eS-N2v"/>
                         <constraint firstAttribute="trailing" secondItem="O4c-md-mWb" secondAttribute="trailing" constant="16" id="eZi-lF-rrR"/>
                         <constraint firstItem="kIE-lM-TgD" firstAttribute="top" secondItem="wjt-vW-rPP" secondAttribute="top" id="tL4-92-LOX"/>
                         <constraint firstItem="O4c-md-mWb" firstAttribute="leading" secondItem="wjt-vW-rPP" secondAttribute="leading" constant="16" id="vut-Md-Gcy"/>

@@ -13,7 +13,7 @@ class PXPrivacyView: UIView {
     @IBOutlet weak var privacyButton: UIButton!
     
     let yourAttributes : [NSAttributedString.Key: Any] = [
-        NSAttributedString.Key.font : UIFont.feedBodyCopy,
+        NSAttributedString.Key.font : UIFont.error,
         NSAttributedString.Key.foregroundColor : UIColor.pureBlue,
         NSAttributedString.Key.underlineStyle : NSUnderlineStyle.single.rawValue]
     

@@ -85,8 +85,8 @@ extension UIFont {
     return UIFont(name: "AkGroteskNextWeb-MedExt", size: 11.0)!
   }
 
-  class var feedBodyCopy: UIFont {
-    return UIFont(name: "AkGroteskNextWeb-Regular", size: 11.0)!
+  class var loaderFont: UIFont {
+    return UIFont(name: "AkGroteskNextWeb-Regular", size: 13.0)!
   }
 
   class var body2FormerlyZDetails: UIFont {

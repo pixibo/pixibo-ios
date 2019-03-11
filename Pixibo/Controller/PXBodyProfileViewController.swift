@@ -27,7 +27,6 @@ class PXBodyProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationItem.title = "FIND YOUR SIZE"
         setBackgroundColor()
-        self.navigationController?.navigationBar.navigationBarSetup()
         addLeftBarButton("back", self, action: #selector(didUserClickeLeftButton))
         addRightBarButton("infoPm", self, action: #selector(didUserClickeRightButton(_:)))
         
@@ -39,12 +38,6 @@ class PXBodyProfileViewController: UIViewController {
         nextButton.disableUI()
         loadXIB()
     }
-    
-    
-    
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
     
     func loadXIB() {
         let nib = UINib(nibName: PXBodyProfileCell.className, bundle: Bundle.main)
@@ -121,7 +114,7 @@ class PXBodyProfileViewController: UIViewController {
     func getWeight() -> String {
         let indexpathForEmail = IndexPath.init(row: 1, section: 0)
         let emailCell = bodyProfileTableView.cellForRow(at: indexpathForEmail) as! PXBodyProfileCell
-        let value = emailCell.unitSegment.selectedSegmentIndex == 0 ? emailCell.rangeSlider?.value : emailCell.rangeSlider?.value.toKg
+        let value = emailCell.rangeSlider?.value.toKg
         return String(format: "%i",(Int(value ?? 0)))
     }
     func getRegion() -> String {
@@ -161,13 +154,13 @@ extension PXBodyProfileViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 66
+        return 56
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: PXHeaderTitleCell.className) as? PXHeaderTitleCell
-        headerView?.updateUI(color: .clear, title: "Enter your height, weight, and bra size.\n\nWe've got you.")
         headerView?.titleLabel.font = UIFont.AKRegularParagraphStyle
+        headerView?.updateUI(color: .clear, title: "Enter your height, weight, and bra size.\nWe've got you.", lineHeight: 2)
         return headerView
     }
 
@@ -221,6 +214,8 @@ extension PXBodyProfileViewController: PXBraSizeDelegate {
     func loadScreen(cell: PXBraSizeCell, tag: Int, selectedVal: String?) {
         let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)
         let examplePicker = storyBoard.instantiateViewController(withIdentifier: PXCustomPickerViewController.className) as! PXCustomPickerViewController
+        examplePicker.providesPresentationContextTransitionStyle = true
+        examplePicker.definesPresentationContext = true
         examplePicker.modalPresentationStyle = .overCurrentContext
         examplePicker.modalTransitionStyle = .crossDissolve
         examplePicker.dataSource = cell

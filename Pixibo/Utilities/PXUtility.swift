@@ -87,6 +87,8 @@ class PXUtility {
     class func loadPixiboController() {
         let storyBoard = UIStoryboard(name: PXConstant.StoryBoard.name, bundle: nil)
         let VC1 = storyBoard.instantiateViewController(withIdentifier: "PXBodyProfileViewController") as! UINavigationController
+        VC1.navigationBar.navigationBarSetup()
+
         if let _ = PXDataManager.sharedManager.resultModel {
             let fitVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXFitPreferenceViewController)
             let resultVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXResultViewController) as! PXResultViewController

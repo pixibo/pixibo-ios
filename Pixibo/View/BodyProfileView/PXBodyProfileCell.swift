@@ -35,34 +35,22 @@ class PXBodyProfileCell: UITableViewCell {
     }
     
     @objc func unitSegmentValueChanged(_ sender: PXCustomSegment) {
-        resetUI()
+        rangeSlider.value = rangeSlider.value
+        setSelectedLabel()
     }
     
     @IBAction func rangeSliderValueChanged(_ sender: Any) {
-        if ((data as? PRBodyHeightModel) != nil) && unitSegment.selectedSegmentIndex == 1 {
-            setSelectedLabel(type: 1)
-        } else {
-            setSelectedLabel(type: 0)
-        }
+        setSelectedLabel()
     }
     
     @IBAction func incrementButtonClicked(_ sender: Any) {
         rangeSlider.value = rangeSlider.value + 1.0
-        if ((data as? PRBodyHeightModel) != nil) && unitSegment.selectedSegmentIndex == 1 {
-            setSelectedLabel(type: 1)
-        } else {
-            setSelectedLabel(type: 0)
-        }
-        
+        setSelectedLabel()
     }
     
     @IBAction func decrementButtonClicked(_ sender: Any) {
         rangeSlider.value = rangeSlider.value - 1.0
-        if ((data as? PRBodyHeightModel) != nil) && unitSegment.selectedSegmentIndex == 1 {
-            setSelectedLabel(type: 1)
-        } else {
-            setSelectedLabel(type: 0)
-        }
+        setSelectedLabel()
     }
     
     func updateUI() {
@@ -73,65 +61,39 @@ class PXBodyProfileCell: UITableViewCell {
                 rangeSlider.maximumValue = Float(height.cmRange.last!)
                 rangeSlider.value = 160 // default value
             }
-            setSelectedLabel(type: 0)
+            setSelectedLabel()
             unitSegment.commaSeperatedButtonTitles = "CM, FT"
             
         }else if let weight = data as? PRBodyWeightModel {
             titleLabel.text = weight.title
             if unitSegment.selectedSegmentIndex == 0 {
-                rangeSlider.minimumValue = Float(weight.kgRange.first!)
-                rangeSlider.maximumValue = Float(weight.kgRange.last!)
-                rangeSlider.value = 50 // default value
-            }
-            setSelectedLabel(type: 0)
-            unitSegment.commaSeperatedButtonTitles = "KG, LB"
-        }
-        
-        
-    }
-    
-    func resetUI() {
-        if let _ = data as? PRBodyHeightModel, cellType == .PXBodyProfileHeight {
-            rangeSlider.value = rangeSlider.value
-            if unitSegment.selectedSegmentIndex == 0 {
-                setSelectedLabel(type: 0)
-            } else {
-                setSelectedLabel(type: 1)
-            }
-        } else if let weight = data as? PRBodyWeightModel, cellType == .PXBodyProfileWeight {
-            if unitSegment.selectedSegmentIndex == 0 {
-                rangeSlider.minimumValue = Float(weight.kgRange.first!)
-                rangeSlider.maximumValue = Float(weight.kgRange.last!)
-                rangeSlider.value = rangeSlider.value.toKg // * 0.453592
-            } else {
                 rangeSlider.minimumValue = Float(weight.lbsRange.first!)
                 rangeSlider.maximumValue = Float(weight.lbsRange.last!)
-                rangeSlider.value = rangeSlider.value.toLb // * 2.20462
+                rangeSlider.value = 110 // default value
             }
-            setSelectedLabel(type: 0)
-
+            setSelectedLabel()
+            unitSegment.commaSeperatedButtonTitles = "KG, LB"
         }
     }
     
-    func getUnitString() -> String {
+    func setSelectedLabel() {
         var unitString = ""
         if cellType == .PXBodyProfileHeight && unitSegment.selectedSegmentIndex == 0 {
             unitString = " CM"
+            selectedValueLabel.text = String(format: "%i",Int(rangeSlider.value)) + unitString
+
         } else if cellType == .PXBodyProfileHeight && unitSegment.selectedSegmentIndex == 1 {
             unitString = " FT"
+            selectedValueLabel.text = PXUtility.showFootAndInchesFromCm(Double(rangeSlider?.value ?? 0))
+            
         } else if cellType == .PXBodyProfileWeight && unitSegment.selectedSegmentIndex == 0 {
             unitString = " KG"
+            rangeSlider.value = rangeSlider.value + 1
+            selectedValueLabel.text = String(format: "%i",Int(rangeSlider.value.toKg)) + unitString
+
         } else if cellType == .PXBodyProfileWeight && unitSegment.selectedSegmentIndex == 1 {
             unitString = " LB"
-        }
-        return unitString
-    }
-    
-    func setSelectedLabel(type: Int) {
-        if type == 1 {
-            selectedValueLabel.text = PXUtility.showFootAndInchesFromCm(Double(rangeSlider?.value ?? 0))
-        }else {
-            selectedValueLabel.text = String(format: "%i",Int(rangeSlider.value)) + getUnitString()
+            selectedValueLabel.text = String(format: "%i",Int(rangeSlider.value)) + unitString
         }
     }
 }

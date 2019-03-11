@@ -24,6 +24,7 @@ class PXResultSizeCell: UITableViewCell {
     @IBOutlet weak var closetLabelHeight: NSLayoutConstraint!
     @IBOutlet weak var closetLabelTopMargin: NSLayoutConstraint!
     @IBOutlet weak var regularLabelTopMargin: NSLayoutConstraint!
+    @IBOutlet weak var titleTopMargin: NSLayoutConstraint!
     let collectionTopInset: CGFloat = 0
     let collectionBottomInset: CGFloat = 0
     let collectionLeftInset: CGFloat = 0
@@ -92,7 +93,7 @@ class PXResultSizeCell: UITableViewCell {
     func slide(position: UICollectionView.ScrollPosition, indexPath: IndexPath) {
         let index  = position == .right ? (indexPath.item + 1) : (indexPath.item - 1)
         let newIndexPath = IndexPath(item: index, section: 0)
-        sizeCollectionView.scrollToItem(at: newIndexPath, at: position, animated: true)
+        sizeCollectionView.scrollToItem(at: newIndexPath, at: position, animated: false)
         delegate?.didUserChangeSize(index: index)
         setTitle(index: index)
         updateSliderButton(index)
@@ -126,6 +127,14 @@ class PXResultSizeCell: UITableViewCell {
         }else {
             resultTitleLabel.text = "FOR THIS ITEM, YOU’LL LOOK BEST IN"
             setConstraint(isRecommended: true)
+        }
+    }
+    
+    func setTitlTopMargin(isAvailable: Bool) {
+        if isAvailable {
+            titleTopMargin.constant = 40
+        }else {
+            titleTopMargin.constant = 30
         }
     }
     

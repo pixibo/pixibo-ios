@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import Lottie
 
 class PXFitPreferenceViewController: UIViewController {
 
     @IBOutlet weak var prefTableView: UITableView!
     @IBOutlet weak var tellMySizeButton: PXButton!
-    private var pomeloAnimation: LOTAnimationView!
+    var isFitPrefChanged = false
     
     lazy var popOver: Popover = {
         let options: [PopoverOption] = [.showBlackOverlay(true),
@@ -32,7 +31,7 @@ class PXFitPreferenceViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.title = "FIND YOUR SIZE"
+        self.title = "FIND YOUR SIZE"
         if let item = getRecommendedItem(){
             PXDataManager.sharedManager.setEntryPageTitleOnSelection(text: PXUtility.getConvertedSizeString(size: item.size ?? ""))
         }else {
@@ -80,13 +79,18 @@ class PXFitPreferenceViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func tellMySizeButtonClicked(_ sender: Any) {
-        if PXDataManager.sharedManager.selectedFirPrefType == .PXRegular {
-            let result = PXDataManager.sharedManager.resultModel
-            let res = (result?.resultArr.count ?? 0) > 0 ? true : false
-            moveToResultController(result: res)
-        } else {
-            fetchUpdatedSizePref()
-        }
+        PXLoaderManager.sharedManager.showAnimated()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            if PXDataManager.sharedManager.selectedFirPrefType == .PXRegular && self.isFitPrefChanged == false{
+                let result = PXDataManager.sharedManager.resultModel
+                let res = (result?.resultArr.count ?? 0) > 0 ? true : false
+                self.moveToResultController(result: res)
+                
+            } else {
+                self.isFitPrefChanged = true
+                self.fetchUpdatedSizePref()
+            }
+        })
     }
 
     func moveToResultController(result: Bool) {
@@ -94,12 +98,12 @@ class PXFitPreferenceViewController: UIViewController {
         let resultVC = storyBoard.instantiateViewController(withIdentifier: PXConstant.ViewControllerID.PXResultViewController) as? PXResultViewController
         resultVC?.result = result
         self.navigationController?.pushViewController(resultVC!, animated: true)
+        PXLoaderManager.sharedManager.hideAnimated()
+
     }
     
     func fetchUpdatedSizePref() {
-        DispatchQueue.main.async {
-            self.addLoader()
-        }
+       
         guard var params = PXDataManager.sharedManager.fitPrefParams else {
             return
         }
@@ -107,7 +111,6 @@ class PXFitPreferenceViewController: UIViewController {
         
         PXWebServiceManager.sharedManager.getSizeRecommendation(params: params) { (response, error) in
             DispatchQueue.main.async {
-                self.removeLoader()
                 if let _ = error {
                     self.addAlert()
                 } else {
@@ -122,20 +125,7 @@ class PXFitPreferenceViewController: UIViewController {
         
         }
     }
-    func addLoader() {
-        pomeloAnimation = LOTAnimationView(name: "Boat_Loader")
-        // Set view to full screen, aspectFill
-        pomeloAnimation!.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        pomeloAnimation!.contentMode = .scaleAspectFill
-        pomeloAnimation!.frame = view.bounds
-        // Add the Animation
-         UIApplication.shared.keyWindow?.addSubview(pomeloAnimation)
-        self.pomeloAnimation.play()
-    }
-    func removeLoader() {
-        self.pomeloAnimation.stop()
-        pomeloAnimation.removeFromSuperview()
-    }
+    
     func addAlert() {
         let customAlert = self.storyboard?.instantiateViewController(withIdentifier: "CustomAlertID") as! CustomAlertView
         customAlert.providesPresentationContextTransitionStyle = true
@@ -161,14 +151,14 @@ extension PXFitPreferenceViewController: UITableViewDataSource {
         if let _ = getRecommendedItem(){
             return 66
         }
-        return 0
+        return CGFloat.leastNormalMagnitude
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let item = getRecommendedItem(){
             let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: PXHeaderTitleCell.className) as? PXHeaderTitleCell
-            headerView?.updateUI(color: .brightYellow, title: "We recommend this in \(PXUtility.getConvertedSizeString(size: item.size ?? "")).\n\n For a better fit, tell us your personal fit preference.")
             headerView?.titleLabel.font = UIFont.subheads
+            headerView?.updateUI(color: .brightYellow, title: "We recommend this in \(PXUtility.getConvertedSizeString(size: item.size ?? "")).\n For a better fit, tell us your personal fit preference.", lineHeight: 4)
             return headerView
         }
         return nil
