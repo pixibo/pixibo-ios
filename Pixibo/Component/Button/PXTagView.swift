@@ -62,12 +62,6 @@ class PXTagView: UIButton {
         }
     }
     
-    @IBInspectable open var textFont: UIFont = .systemFont(ofSize: 12) {
-        didSet {
-            titleLabel?.font = textFont
-        }
-    }
-    
     private func reloadStyles() {
         if isHighlighted {
             if let highlightedBackgroundColor = highlightedBackgroundColor {
@@ -116,6 +110,8 @@ class PXTagView: UIButton {
     
     private func setupView() {
         frame.size = intrinsicContentSize
+        titleEdgeInsets.left = 2
+        titleEdgeInsets.right = 2
     }
 
     /// Handles Tap (TouchUpInside)

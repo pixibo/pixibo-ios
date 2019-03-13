@@ -73,9 +73,9 @@ class PXDataManager: NSObject {
     }
     
     func reset() {
-        resultModel = nil
+//        resultModel = nil
         selectedFirPrefType = PXConstant.firPrefType.PXRegular
-        setEntryPageTitle(title: "FIND MY SIZE")
+//        setEntryPageTitle(title: "FIND MY SIZE")
         fitPrefParams = [:]
 
     }

@@ -29,6 +29,9 @@ class Pixibo {
                         PXUtility.addAlert()
                     }
                 }
+                PXWebServiceManager.sharedManager.fireEvent(onCompletion: { (response, error) in
+                    
+                })
             }
         }
     }

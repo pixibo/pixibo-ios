@@ -42,6 +42,16 @@ class PXWebServiceManager: NSObject {
         }
     }
 
+    func fireEvent(onCompletion : @escaping PXAPIConstant.responseBlock) {
+        let params = [PXJSONKeysConstant.eventKeys.eventType: PXJSONKeysConstant.eventKeys.eventTypeValue,
+                      PXJSONKeysConstant.eventKeys.event: PXJSONKeysConstant.eventKeys.eventValue,
+                      PXJSONKeysConstant.eventKeys.page: PXJSONKeysConstant.eventKeys.pageValue]
+        let url = PXAPIConstant.getEventBaseUrl()
+        let request = self.prepareGetRequest(url: url, params: params)
+        requestServerWith(request: request) { (response, error) in
+            onCompletion(response, error)
+        }
+    }
 }
 
 private extension PXWebServiceManager {

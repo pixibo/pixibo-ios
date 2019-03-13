@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getYourSizeButtonClicked(_ sender: Any) {
-        Pixibo.presentFyf(withSKUId: "p23209", withAltId: "user_id")
-        
+        Pixibo.presentFyf(withSKUId: "[POMELO SKUID]", withAltId: "[POMELO USER ID]")
+        //Pixibo.presentFyf(withSKUId: "22593", withAltId: "user_id")
     }
 }
 

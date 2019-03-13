@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Pixibo.initialize(forClientId: "1ib601i9q3skm")
+        Pixibo.initialize(forClientId:"qxfgc8rhrozb")
         return true
     }
 

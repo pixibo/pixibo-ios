@@ -52,23 +52,25 @@ class PXUtility {
     }
     
     class func getConvertedSizeString(size: String) -> String {
-        if size == "INT XS" {
-            return "Size XS"
-        } else if size == "INT S" {
-            return "Size S"
-        } else if size == "INT M" {
-            return "Size M"
-        } else if size == "INT L" {
-            return "Size L"
-        } else if size == "INT XL" {
-            return "Size XL"
-        } else if size == "INT XXL" {
-            return "Size XXL"
-        } else if size == "INT XXXL" {
-            return "Size XXXL"
-        } else {
-            return ""
-        }
+        return "Size " + size
+//        switch size {
+//        case "INT XS", "XS", "xs":
+//            return "Size XS"
+//        case "INT S", "S", "s":
+//            return "Size S"
+//        case "INT M", "M", "m":
+//            return "Size M"
+//        case "INT L", "L", "l":
+//            return "Size L"
+//        case "INT XL", "XL", "xl":
+//            return "Size XL"
+//        case "INT XXL", "XXL", "xxl":
+//            return "Size XXL"
+//        case "INT XXXL", "XXXL", "xxxl":
+//            return "Size XXXL"
+//        default:
+//             return "-"
+//        }
     }
     
     class func getTopMostController () -> UIViewController? {

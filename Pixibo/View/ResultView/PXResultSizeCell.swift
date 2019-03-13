@@ -79,7 +79,7 @@ class PXResultSizeCell: UITableViewCell {
         guard let index = indexPath, !isLastIndex(indexPath: index) else {
             return
         }
-        slide(position: .right, indexPath: index)
+        slide(position: .right, indexPath: index, animate: true)
     }
     
     @IBAction func slideToLeft(_ sender: UIButton) {
@@ -87,13 +87,13 @@ class PXResultSizeCell: UITableViewCell {
         guard let index = indexPath, !isFirstIndex(indexPath: index) else {
             return
         }
-        slide(position: .left, indexPath: index)
+        slide(position: .left, indexPath: index, animate: true)
     }
     
-    func slide(position: UICollectionView.ScrollPosition, indexPath: IndexPath) {
+    func slide(position: UICollectionView.ScrollPosition, indexPath: IndexPath, animate: Bool = false) {
         let index  = position == .right ? (indexPath.item + 1) : (indexPath.item - 1)
         let newIndexPath = IndexPath(item: index, section: 0)
-        sizeCollectionView.scrollToItem(at: newIndexPath, at: position, animated: false)
+        sizeCollectionView.scrollToItem(at: newIndexPath, at: position, animated: animate)
         delegate?.didUserChangeSize(index: index)
         setTitle(index: index)
         updateSliderButton(index)

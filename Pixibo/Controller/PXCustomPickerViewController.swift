@@ -45,7 +45,11 @@ class PXCustomPickerViewController: UIViewController {
         DispatchQueue.main.async {
             //This code will run in the main thread:
             var frame = self.tableView.frame
-            frame.size.height = self.tableView.contentSize.height
+            if self.tableView.contentSize.height > 0.7*self.view.bounds.height {
+                frame.size.height = self.view.bounds.height * 0.7
+            }else {
+                frame.size.height = self.tableView.contentSize.height
+            }
             self.tableView.frame = frame
             self.tableViewHeight.constant = frame.size.height
             self.view.layoutIfNeeded()

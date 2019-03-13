@@ -93,6 +93,7 @@ class PXBodyProfileCell: UITableViewCell {
 
         } else if cellType == .PXBodyProfileWeight && unitSegment.selectedSegmentIndex == 1 {
             unitString = " LB"
+            rangeSlider.value = rangeSlider.value - 1
             selectedValueLabel.text = String(format: "%i",Int(rangeSlider.value)) + unitString
         }
     }

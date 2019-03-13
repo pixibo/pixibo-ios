@@ -17,5 +17,15 @@ struct PXJSONKeysConstant {
         static let age = "age"
         static let ftp = "ftp"
     }
+    
+    struct eventKeys {
+        static let eventType = "eventType"
+        static let eventTypeValue = "click"
+        static let event = "event"
+        static let eventValue = "sizeSelection"
+        static let page = "page"
+        static let pageValue = "pdpapp"
+       
+    }
 }
 

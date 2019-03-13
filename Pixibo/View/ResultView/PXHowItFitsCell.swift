@@ -57,7 +57,7 @@ class PXHowItFitsCell: UITableViewCell {
         
         switch type {
         case 0:
-            label.text = "Not applicable"
+            label.text = "-"
             label.textColor = UIColor.brownGrey
         case 1:
             label.text = "Too Tight"
